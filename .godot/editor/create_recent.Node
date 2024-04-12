@@ -1,2 +1,6 @@
+CollisionShape2D
+TileMap
+CanvasLayer
+Camera2D
 Timer
 Label
