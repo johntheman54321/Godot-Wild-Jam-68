@@ -1,2 +1,6 @@
+AnimationPlayer
+ColorRect
+CanvasLayer
+CanvasModulate
 Timer
 Label
