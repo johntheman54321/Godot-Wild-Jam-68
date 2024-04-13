@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://dx1gv8nvax1i2"]
 
-[ext_resource type="Script" path="res://World/world.gd" id="1_cvhux"]
+[ext_resource type="Script" path="res://Scenes/World/world.gd" id="1_rn2s4"]
 
 [node name="World" type="Node2D"]
-script = ExtResource("1_cvhux")
+script = ExtResource("1_rn2s4")
 
 [node name="Timer_UI" type="Label" parent="."]
 offset_right = 242.0
