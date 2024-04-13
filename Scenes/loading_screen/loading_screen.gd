@@ -1,4 +1,11 @@
-extends Node2D
+extends AnimationPlayer
+
+@export var animation_type:String
 
 func _ready():
-	$AnimationPlayer.play("Fade")
+	if animation_type == "in":
+		$".".play("Fade in")
+	if animation_type == "out":
+		$".".play("Fade out")
+		
+	

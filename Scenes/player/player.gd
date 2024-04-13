@@ -1,6 +1,6 @@
-extends Node2D
+extends CharacterBody2D
 
-@export var speed = 3
+@export var speed = 100
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -8,5 +8,6 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	position += Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down") * speed
+func _physics_process(delta):
+	position += Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down") * speed * delta
+	move_and_slide()
