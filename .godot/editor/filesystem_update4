@@ -1,5 +1,2 @@
-res://World/world.tscn
-res://Scenes/loading_screen.tscn
-res://Scenes/loading_screen/loading_screen.tscn
 res://Scenes/World/world.tscn
-res://Scenes/World/world.gd
+res://Scenes/loading_screen/loading_screen.tscn
