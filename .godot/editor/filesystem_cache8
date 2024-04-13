@@ -2,13 +2,17 @@ ea4bc82a6ad023ab7ee23ee620429895
 ::res://::1713029094
 icon.svg::CompressedTexture2D::1346206398989664400::1712958321::1713029015::1::::<><>::
 README.md::TextFile::-1::1712958321::0::1::::<><>::
-::res://Scenes/::1713029051
-::res://Scenes/loading_screen/::1713029051
+::res://Scenes/::1713029340
+::res://Scenes/loading_screen/::1713029112
 loading_screen.gd::GDScript::-1::1713029051::0::1::::<>Node2D<>::
-loading_screen.tscn::PackedScene::1177515191130613376::1713029051::0::1::::<><>::res://Scenes/loading_screen/loading_screen.gd
-::res://Scenes/World/::1713029051
+loading_screen.tscn::PackedScene::1177515191130613376::1713029112::0::1::::<><>::res://Scenes/loading_screen/loading_screen.gd
+::res://Scenes/player/::1713029340
+player.tscn::PackedScene::9203744487414567948::1713029342::0::1::::<><>::
+::res://Scenes/World/::1713029112
 world.gd::GDScript::-1::1713029051::0::1::::<>Node2D<>::
-world.tscn::PackedScene::8827682834296294187::1713029051::0::1::::<><>::res://Scenes/World/world.gd<>uid://ceodsknvecwpo::::res://Sprites/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png
+world.tscn::PackedScene::8827682834296294187::1713029112::0::1::::<><>::res://Scenes/World/world.gd<>uid://ceodsknvecwpo::::res://Sprites/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png
+::res://Scenes/world/::0
+world.tscn::PackedScene::8827682834296294187::1713029358::0::1::::<><>::res://Scenes/World/world.gd<>uid://ceodsknvecwpo::::res://Sprites/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png
 ::res://Sprites/::1713029051
 ::res://Sprites/2D Pixel Dungeon Asset Pack/::1713029052
 Dungeon_Character_at.png::CompressedTexture2D::2588432040429676463::1713029051::1713029051::1::::<><>::
