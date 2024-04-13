@@ -1,4 +1,2 @@
 res://World/world.tscn
-res://World/world.gd
 res://Scenes/loading_screen.tscn
-res://Scripts/loading_screen.gd

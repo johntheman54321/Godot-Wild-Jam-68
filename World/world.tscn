@@ -15,4 +15,7 @@ text = "Hour 0"
 wait_time = 3.0
 autostart = true
 
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
+
 [connection signal="timeout" from="Timer_UI/Timer" to="." method="_on_timer_timeout"]
