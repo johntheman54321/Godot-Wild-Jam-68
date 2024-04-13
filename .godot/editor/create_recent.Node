@@ -1,7 +1,9 @@
+CanvasLayer
+Camera2D
+Control
 TileMap
 AnimationPlayer
 ColorRect
-CanvasLayer
 CanvasModulate
 Timer
 Label
