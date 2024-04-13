@@ -1,4 +1,4 @@
-res://Scenes/loading_screen/loading_screen.gd
+res://Scenes/world/world.tscn
 res://Scenes/loading_screen/loading_screen.tscn
 res://Scenes/player/player.tscn
-res://Scenes/world/world.tscn
+res://Scenes/player/player.gd
