@@ -50,4 +50,4 @@ animation_type = "out"
 [node name="ColorRect" type="ColorRect" parent="AnimationPlayer"]
 offset_right = 1155.0
 offset_bottom = 652.0
-color = Color(0, 0, 0, 0.526316)
+color = Color(0, 0, 0, 1)
