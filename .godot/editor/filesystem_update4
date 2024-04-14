@@ -1,6 +1,5 @@
-res://Scenes/Pause Menu/pause_menu.tscn
-res://Scenes/Pause Menu/pause_menu.gd
-res://Scenes/world/world.tscn
 res://Scenes/player/player.tscn
-res://Scenes/loading_screen/loading_screen.tscn
+res://Scenes/Pause Menu/pause_menu.tscn
+res://Scenes/world/world.tscn
 res://Scenes/world/world.gd
+res://Scenes/Pause Menu/pause_menu.gd

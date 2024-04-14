@@ -2,6 +2,7 @@ extends Node2D
 
 var hour = 0
 var day = 0
+var paused = false
 @onready var pauseMenu = $Camera2D/Pause_Menu
 
 func _process(delta):
@@ -16,6 +17,13 @@ func _on_timer_timeout():
 		day += 1
 
 func PauseMenu():
-	pauseMenu.show()
-	get_tree().paused = true
+	if paused:
+		pauseMenu.hide()
+		Engine.time_scale = 1
+	if paused == false:
+		pauseMenu.show()
+		Engine.time_scale = 0
+		
+	paused = !paused
+	print(paused)
 	

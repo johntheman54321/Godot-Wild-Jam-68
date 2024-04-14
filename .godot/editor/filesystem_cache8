@@ -1,23 +1,23 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713110610
+::res://::1713128132
 icon.svg::CompressedTexture2D::1346206398989664400::1712956287::1713065747::1::::<><>::
 README.md::TextFile::-1::1712958425::0::1::::<><>::
 ::res://Fonts/::1713066551
 BLKCHCRY.otf::FontFile::4311204252774675875::1713066550::1713066551::1::::<><>::
 ::res://Music/::1713066303
 ::res://Scenes/::1713108422
-::res://Scenes/loading_screen/::1713110431
+::res://Scenes/loading_screen/::1713111627
 loading_screen.gd::GDScript::-1::1713066085::0::1::::<>Node2D<>::
-loading_screen.tscn::PackedScene::1177515191130613376::1713110431::0::1::::<><>::res://Scenes/loading_screen/loading_screen.gd
-::res://Scenes/Pause Menu/::1713110598
-pause_menu.gd::GDScript::-1::1713109430::0::1::::<>Node2D<>::
-pause_menu.tscn::PackedScene::415568209989444780::1713110598::0::1::::<><>::res://Scenes/Pause Menu/pause_menu.gd<>uid://b2om50ho0qbh8::::res://Fonts/BLKCHCRY.otf<>uid://d48hqrcmb3v3::::res://Sprites/Buttons/tres/Normal Brown Button.tres<>uid://cw8yhi13l41fh::::res://Sprites/Buttons/tres/Hover Brown Button.tres
-::res://Scenes/player/::1713110431
+loading_screen.tscn::PackedScene::1177515191130613376::1713111627::0::1::::<><>::res://Scenes/loading_screen/loading_screen.gd
+::res://Scenes/Pause Menu/::1713112220
+pause_menu.gd::GDScript::-1::1713111755::0::1::::<>Control<>::
+pause_menu.tscn::PackedScene::415568209989444780::1713112220::0::1::::<><>::res://Scenes/Pause Menu/pause_menu.gd<>uid://b2om50ho0qbh8::::res://Fonts/BLKCHCRY.otf<>uid://d48hqrcmb3v3::::res://Sprites/Buttons/tres/Normal Brown Button.tres<>uid://cw8yhi13l41fh::::res://Sprites/Buttons/tres/Hover Brown Button.tres
+::res://Scenes/player/::1713112202
 player.gd::GDScript::-1::1713065704::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::9203744487414567948::1713110431::0::1::::<><>::res://Scenes/player/player.gd<>uid://dwcsapqfi21ys::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_1.png<>uid://3v10wxhov6wu::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_2.png<>uid://h0yxqmq7y1og::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_3.png<>uid://vttbtaqw7hg4::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_4.png
-::res://Scenes/World/::1713110596
-world.gd::GDScript::-1::1713029087::0::1::::<>Node2D<>::
-world.tscn::PackedScene::8827682834296294187::1713110596::0::1::::<><>::res://Scenes/world/world.gd<>uid://ceodsknvecwpo::::res://Sprites/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png<>uid://d4emleblx5wfk::::res://Scenes/player/player.tscn<>uid://q1nrdwh5h3ts::::res://Scenes/loading_screen/loading_screen.tscn<>uid://b2om50ho0qbh8::::res://Fonts/BLKCHCRY.otf<>uid://f6kl27emvlii::::res://Scenes/Pause Menu/pause_menu.tscn
+player.tscn::PackedScene::9203744487414567948::1713112202::0::1::::<><>::res://Scenes/player/player.gd<>uid://dwcsapqfi21ys::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_1.png<>uid://3v10wxhov6wu::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_2.png<>uid://h0yxqmq7y1og::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_3.png<>uid://vttbtaqw7hg4::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_4.png
+::res://Scenes/World/::1713112202
+world.gd::GDScript::-1::1713111627::0::1::::<>Node2D<>::
+world.tscn::PackedScene::8827682834296294187::1713112202::0::1::::<><>::res://Scenes/world/world.gd<>uid://ceodsknvecwpo::::res://Sprites/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png<>uid://d4emleblx5wfk::::res://Scenes/player/player.tscn<>uid://q1nrdwh5h3ts::::res://Scenes/loading_screen/loading_screen.tscn<>uid://b2om50ho0qbh8::::res://Fonts/BLKCHCRY.otf<>uid://f6kl27emvlii::::res://Scenes/Pause Menu/pause_menu.tscn
 ::res://SFX/::1713066310
 ::res://Sprites/::1713109975
 ::res://Sprites/2D Pixel Dungeon Asset Pack/::1713029088
@@ -250,5 +250,5 @@ torch_4.png::CompressedTexture2D::5731630760773637191::1713029088::1713029088::1
 brown button.png::CompressedTexture2D::1839461474052589718::1713109971::1713110009::1::::<><>::
 hover brown.png::CompressedTexture2D::1158373684076338258::1713109971::1713110009::1::::<><>::
 ::res://Sprites/Buttons/tres/::1713110196
-Hover Brown Button.tres::StyleBoxTexture::6386590563330394161::1713110196::0::1::::<><>::uid://qreiluxvmiis::::res://Sprites/Buttons/Sprites/hover brown.png
-Normal Brown Button.tres::StyleBoxTexture::272450513842714910::1713110096::0::1::::<><>::uid://1hbwq7uh61f3::::res://Sprites/Buttons/Sprites/brown button.png
+Hover Brown Button.tres::StyleBoxTexture::6386590563330394161::1713110196::0::1::::<><>::uid://qreiluxvmiis
+Normal Brown Button.tres::StyleBoxTexture::272450513842714910::1713110096::0::1::::<><>::uid://1hbwq7uh61f3

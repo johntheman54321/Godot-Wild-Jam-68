@@ -6,7 +6,6 @@
 [ext_resource type="StyleBox" uid="uid://cw8yhi13l41fh" path="res://Sprites/Buttons/tres/Hover Brown Button.tres" id="4_5vo1v"]
 
 [node name="Pause_Menu" type="Control"]
-process_mode = 2
 layout_mode = 3
 anchors_preset = 0
 scale = Vector2(0.967001, 1)
