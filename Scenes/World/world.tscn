@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://dx1gv8nvax1i2"]
+[gd_scene load_steps=9 format=3 uid="uid://dx1gv8nvax1i2"]
 
 [ext_resource type="Script" path="res://Scenes/world/world.gd" id="1_r4sy2"]
 [ext_resource type="Texture2D" uid="uid://ceodsknvecwpo" path="res://Sprites/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png" id="2_vjgdf"]
 [ext_resource type="PackedScene" uid="uid://d4emleblx5wfk" path="res://Scenes/player/player.tscn" id="3_qopbf"]
 [ext_resource type="PackedScene" uid="uid://q1nrdwh5h3ts" path="res://Scenes/loading_screen/loading_screen.tscn" id="4_ulie7"]
 [ext_resource type="FontFile" uid="uid://b2om50ho0qbh8" path="res://Fonts/BLKCHCRY.otf" id="5_ogirs"]
+[ext_resource type="PackedScene" uid="uid://f6kl27emvlii" path="res://Scenes/Pause Menu/pause_menu.tscn" id="6_5fyle"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ve46v"]
 texture = ExtResource("2_vjgdf")
@@ -349,17 +350,11 @@ layer_0/tile_data = PackedInt32Array(-458764, 524288, 7, -393228, 524288, 7, -32
 position = Vector2(-192, 128)
 platform_wall_layers = 1
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-192, 112)
-zoom = Vector2(3, 3)
-limit_left = -768
-limit_top = -512
-limit_right = 768
-limit_bottom = 512
-
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Timer_UI" type="Label" parent="CanvasLayer"]
+texture_filter = 2
+texture_repeat = 3
 offset_right = 242.0
 offset_bottom = 183.0
 theme_override_fonts/font = ExtResource("5_ogirs")
@@ -369,5 +364,17 @@ text = "Hour 0"
 [node name="Timer" type="Timer" parent="CanvasLayer/Timer_UI"]
 wait_time = 3.0
 autostart = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-192, 112)
+zoom = Vector2(3, 3)
+limit_left = -768
+limit_top = -512
+limit_right = 768
+limit_bottom = 512
+
+[node name="Pause_Menu" parent="Camera2D" instance=ExtResource("6_5fyle")]
+visible = false
+scale = Vector2(0.52, 0.520001)
 
 [connection signal="timeout" from="CanvasLayer/Timer_UI/Timer" to="." method="_on_timer_timeout"]

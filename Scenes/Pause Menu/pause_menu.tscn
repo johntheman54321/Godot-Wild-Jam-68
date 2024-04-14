@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=3 uid="uid://f6kl27emvlii"]
+
+[ext_resource type="Script" path="res://Scenes/Pause Menu/pause_menu.gd" id="1_y3lst"]
+[ext_resource type="FontFile" uid="uid://b2om50ho0qbh8" path="res://Fonts/BLKCHCRY.otf" id="2_t81o0"]
+[ext_resource type="StyleBox" uid="uid://d48hqrcmb3v3" path="res://Sprites/Buttons/tres/Normal Brown Button.tres" id="3_y0u7n"]
+[ext_resource type="StyleBox" uid="uid://cw8yhi13l41fh" path="res://Sprites/Buttons/tres/Hover Brown Button.tres" id="4_5vo1v"]
+
+[node name="Pause_Menu" type="Control"]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 0
+scale = Vector2(0.967001, 1)
+script = ExtResource("1_y3lst")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -380.558
+offset_top = -240.0
+offset_right = 397.442
+offset_bottom = 216.0
+color = Color(0.0941176, 0.0941176, 0.0941176, 0.631373)
+
+[node name="Resume" type="Button" parent="."]
+layout_mode = 0
+offset_left = -120.0
+offset_top = -128.0
+offset_right = 136.0
+offset_bottom = -24.0
+theme_override_fonts/font = ExtResource("2_t81o0")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = ExtResource("3_y0u7n")
+theme_override_styles/hover = ExtResource("4_5vo1v")
+theme_override_styles/pressed = ExtResource("4_5vo1v")
+theme_override_styles/disabled = ExtResource("4_5vo1v")
+theme_override_styles/focus = ExtResource("4_5vo1v")
+text = "Resume"
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 0
+offset_left = -120.0
+offset_top = 32.0
+offset_right = 136.0
+offset_bottom = 136.0
+theme_override_fonts/font = ExtResource("2_t81o0")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = ExtResource("3_y0u7n")
+theme_override_styles/hover = ExtResource("4_5vo1v")
+theme_override_styles/pressed = ExtResource("4_5vo1v")
+theme_override_styles/disabled = ExtResource("4_5vo1v")
+theme_override_styles/focus = ExtResource("4_5vo1v")
+text = "Quit"
+
+[connection signal="pressed" from="Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
