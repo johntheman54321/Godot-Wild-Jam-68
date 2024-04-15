@@ -10,7 +10,7 @@ script = ExtResource("1_lggo8")
 
 [node name="Medieval Song Village Consort" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("1_knmol")
-volume_db = -10.0
+volume_db = -23.639
 bus = &"Music"
 
 [node name="Royalty Free Medieval Music - _Celebration" type="AudioStreamPlayer" parent="."]
