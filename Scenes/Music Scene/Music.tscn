@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://bqucp1sffdix"]
+
+[ext_resource type="AudioStream" uid="uid://bjsrrhlf7h4jc" path="res://Music/Medieval Song Village Consort [No Copyright Music].mp3" id="1_knmol"]
+[ext_resource type="Script" path="res://Scenes/Music Scene/Music.gd" id="1_lggo8"]
+[ext_resource type="AudioStream" uid="uid://bj0ji5ho0t4sx" path="res://Music/Royalty Free Medieval Music - _Celebration_ by Alexander Nakarada.mp3" id="2_2pteo"]
+[ext_resource type="AudioStream" uid="uid://b3bj8ncolr78u" path="res://Music/_Dungeons and Dragons_ - Royalty Free Music For Commercial Use - Epic-Celtic Fantasy.mp3" id="3_sjix3"]
+
+[node name="Music" type="Node2D"]
+script = ExtResource("1_lggo8")
+
+[node name="Medieval Song Village Consort" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_knmol")
+
+[node name="Royalty Free Medieval Music - _Celebration" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_2pteo")
+
+[node name="Dungeons and Dragons" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_sjix3")

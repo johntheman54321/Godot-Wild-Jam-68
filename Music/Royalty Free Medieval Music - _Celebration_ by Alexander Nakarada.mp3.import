@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bj0ji5ho0t4sx"
+path="res://.godot/imported/Royalty Free Medieval Music - _Celebration_ by Alexander Nakarada.mp3-807afedfa8f001941ca94fc6ede0b740.mp3str"
+
+[deps]
+
+source_file="res://Music/Royalty Free Medieval Music - _Celebration_ by Alexander Nakarada.mp3"
+dest_files=["res://.godot/imported/Royalty Free Medieval Music - _Celebration_ by Alexander Nakarada.mp3-807afedfa8f001941ca94fc6ede0b740.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
