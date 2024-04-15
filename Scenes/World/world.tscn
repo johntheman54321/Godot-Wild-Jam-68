@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dx1gv8nvax1i2"]
+[gd_scene load_steps=11 format=3 uid="uid://dx1gv8nvax1i2"]
 
 [ext_resource type="Script" path="res://Scenes/world/world.gd" id="1_r4sy2"]
 [ext_resource type="Texture2D" uid="uid://ceodsknvecwpo" path="res://Sprites/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png" id="2_vjgdf"]
@@ -7,6 +7,7 @@
 [ext_resource type="FontFile" uid="uid://b2om50ho0qbh8" path="res://Fonts/BLKCHCRY.otf" id="5_ogirs"]
 [ext_resource type="PackedScene" uid="uid://f6kl27emvlii" path="res://Scenes/Pause Menu/pause_menu.tscn" id="6_5fyle"]
 [ext_resource type="PackedScene" uid="uid://do8ww1urgvtat" path="res://Scenes/machines/furnace/furnace.tscn" id="6_36x2y"]
+[ext_resource type="FontFile" uid="uid://b3tdwh3h4808i" path="res://Fonts/Platypi-VariableFont_wght.otf" id="7_x0q25"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ve46v"]
 texture = ExtResource("2_vjgdf")
@@ -339,7 +340,6 @@ script = ExtResource("1_r4sy2")
 [node name="Loading_Screen" parent="." instance=ExtResource("4_ulie7")]
 top_level = true
 texture_filter = 2
-position = Vector2(-384, 0)
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(-192, 128)
@@ -361,7 +361,7 @@ platform_wall_layers = 1
 texture_filter = 2
 texture_repeat = 3
 offset_right = 242.0
-offset_bottom = 183.0
+offset_bottom = 96.0
 theme_override_fonts/font = ExtResource("5_ogirs")
 theme_override_font_sizes/font_size = 70
 text = "Hour 0"
@@ -369,6 +369,36 @@ text = "Hour 0"
 [node name="Timer" type="Timer" parent="CanvasLayer/Timer_UI"]
 wait_time = 3.0
 autostart = true
+
+[node name="Inventory" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -832.0
+offset_bottom = 96.0
+grow_horizontal = 0
+
+[node name="Bronze" type="Panel" parent="CanvasLayer/Inventory"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -188.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = 88.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Inventory/Bronze"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 172.0
+offset_bottom = 76.0
+theme_override_fonts/font = ExtResource("7_x0q25")
+text = "Bronze: "
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-192, 112)

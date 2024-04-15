@@ -1,13 +1,15 @@
+Panel
+Label
+Control
+Container
 AudioStreamPlayer
 Node2D
 AudioStreamPlayer2D
-Label
 CollisionShape2D
 Area2D
 StaticBody2D
 AnimatedSprite2D
 ColorRect
-Control
 Button
 Sprite2D
 CharacterBody2D
