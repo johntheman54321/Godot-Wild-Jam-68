@@ -8,12 +8,15 @@ var isCooking = false
 func _process(delta):
 	if Input.is_action_just_pressed("Interact"):
 		$Tooltip.hide()
-		isCooking = true
+		print("pressed")
 
 func _on_area_2d_body_entered(body):
-	if body == player and not isCooking:
+	if body == player:
 		$Tooltip.show()
+		print("in of furnace")
 
 func _on_area_2d_body_exited(body):
 	if body == player:
 		$Tooltip.hide()
+		print("out of furnace")
+		

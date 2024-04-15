@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://do8ww1urgvtat"]
+[gd_scene load_steps=9 format=3 uid="uid://do8ww1urgvtat"]
 
 [ext_resource type="Texture2D" uid="uid://bwyh6tdfh4n35" path="res://Sprites/Furnace.png" id="1_61pyl"]
 [ext_resource type="Script" path="res://Scenes/machines/furnace/furnace.gd" id="1_wqvqv"]
+[ext_resource type="FontFile" uid="uid://b3tdwh3h4808i" path="res://Fonts/Platypi-VariableFont_wght.otf" id="3_rfhdb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7foo4"]
 atlas = ExtResource("1_61pyl")
@@ -54,13 +55,12 @@ position = Vector2(0, 16)
 shape = SubResource("RectangleShape2D_owajv")
 
 [node name="Tooltip" type="Label" parent="."]
-visible = false
-texture_filter = 1
-offset_left = 12.0
-offset_top = -24.0
-offset_right = 18.0
-offset_bottom = -7.0
-theme_override_font_sizes/font_size = 10
+offset_left = -8.0
+offset_top = -40.0
+offset_right = 26.0
+offset_bottom = 18.0
+theme_override_fonts/font = ExtResource("3_rfhdb")
+theme_override_font_sizes/font_size = 20
 text = "E"
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

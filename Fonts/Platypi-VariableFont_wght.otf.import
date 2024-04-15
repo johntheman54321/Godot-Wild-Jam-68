@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://b2om50ho0qbh8"
-path="res://.godot/imported/BLKCHCRY.otf-4e3e869be9310197b1f09f57c0a82245.fontdata"
+uid="uid://b3tdwh3h4808i"
+path="res://.godot/imported/Platypi-VariableFont_wght.otf-5e6f20d0bec088f4ff9f5f16088f52b2.fontdata"
 
 [deps]
 
-source_file="res://Fonts/BLKCHCRY.otf"
-dest_files=["res://.godot/imported/BLKCHCRY.otf-4e3e869be9310197b1f09f57c0a82245.fontdata"]
+source_file="res://Fonts/Platypi-VariableFont_wght.otf"
+dest_files=["res://.godot/imported/Platypi-VariableFont_wght.otf-5e6f20d0bec088f4ff9f5f16088f52b2.fontdata"]
 
 [params]
 
@@ -27,13 +27,7 @@ Fallbacks=null
 fallbacks=[]
 Compress=null
 compress=true
-preload=[{
-"chars": [],
-"glyphs": [],
-"name": "New Configuration",
-"size": Vector2i(16, 0),
-"variation_embolden": 0.0
-}]
+preload=[]
 language_support={}
 script_support={}
 opentype_features={}
