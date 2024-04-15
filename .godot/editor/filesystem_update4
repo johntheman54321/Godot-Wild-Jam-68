@@ -1,7 +1,6 @@
+res://Scenes/Music Scene/Music.gd
 res://Scenes/player/player.tscn
 res://Scenes/Pause Menu/pause_menu.tscn
 res://Scenes/machines/furnace/furnace.tscn
-res://default_bus_layout.tres
-res://Scenes/world/world.tscn
 res://Scenes/Music Scene/Music.tscn
-res://Scenes/Music Scene/Music.gd
+res://Scenes/world/world.tscn

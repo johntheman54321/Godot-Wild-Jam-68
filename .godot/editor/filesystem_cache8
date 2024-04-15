@@ -1,35 +1,35 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713147105
+::res://::1713210154
+default_bus_layout.tres::AudioBusLayout::750229254839676878::1713147067::0::1::::<><>::
 icon.svg::CompressedTexture2D::1346206398989664400::1712956287::1713139186::1::::<><>::
 README.md::TextFile::-1::1712958425::0::1::::<><>::
-default_bus_layout.tres::AudioBusLayout::750229254839676878::1713147067::0::1::::<><>::
 ::res://Fonts/::1713141002
 BLKCHCRY.otf::FontFile::4311204252774675875::1713066550::1713140323::1::::<><>::
 Platypi-VariableFont_wght.otf::FontFile::4391153332605454086::1713141002::1713141002::1::::<><>::
-::res://Music/::1713147585
+::res://Music/::1713147586
 Medieval Song Village Consort [No Copyright Music].mp3::AudioStreamMP3::3056342008308430016::1713147585::1713147586::1::::<><>::
 Royalty Free Medieval Music - _Celebration_ by Alexander Nakarada.mp3::AudioStreamMP3::3070292046757444759::1713147585::1713147586::1::::<><>::
 _Dungeons and Dragons_ - Royalty Free Music For Commercial Use - Epic-Celtic Fantasy.mp3::AudioStreamMP3::4354378753990489966::1713147585::1713147586::1::::<><>::
-::res://Scenes/::1713139176
+::res://Scenes/::1713147789
 ::res://Scenes/loading_screen/::1713111627
 loading_screen.gd::GDScript::-1::1713066085::0::1::::<>Node2D<>::
 loading_screen.tscn::PackedScene::1177515191130613376::1713111627::0::1::::<><>::res://Scenes/loading_screen/loading_screen.gd
 ::res://Scenes/machines/::1713139176
-::res://Scenes/machines/furnace/::1713147155
+::res://Scenes/machines/furnace/::1713148486
 furnace.gd::GDScript::-1::1713139495::0::1::::<>StaticBody2D<>::
-furnace.tscn::PackedScene::8211406786486958727::1713147155::0::1::::<><>::uid://bwyh6tdfh4n35::::res://Sprites/Furnace.png<>res://Scenes/machines/furnace/furnace.gd<>uid://b3tdwh3h4808i::::res://Fonts/Platypi-VariableFont_wght.otf
-::res://Scenes/Pause Menu/::1713147155
+furnace.tscn::PackedScene::8211406786486958727::1713148486::0::1::::<><>::uid://bwyh6tdfh4n35::::res://Sprites/Furnace.png<>res://Scenes/machines/furnace/furnace.gd<>uid://b3tdwh3h4808i::::res://Fonts/Platypi-VariableFont_wght.otf
+::res://Scenes/Music Scene/::1713149446
+Music.gd::GDScript::-1::1713149446::0::1::::<>Node2D<>::
+Music.tscn::PackedScene::104437627986014443::1713148486::0::1::::<><>::uid://bjsrrhlf7h4jc::::res://Music/Medieval Song Village Consort [No Copyright Music].mp3<>res://Scenes/Music Scene/Music.gd<>uid://bj0ji5ho0t4sx::::res://Music/Royalty Free Medieval Music - _Celebration_ by Alexander Nakarada.mp3<>uid://b3bj8ncolr78u::::res://Music/_Dungeons and Dragons_ - Royalty Free Music For Commercial Use - Epic-Celtic Fantasy.mp3
+::res://Scenes/Pause Menu/::1713148486
 pause_menu.gd::GDScript::-1::1713128916::0::1::::<>Control<>::
-pause_menu.tscn::PackedScene::415568209989444780::1713147155::0::1::::<><>::res://Scenes/Pause Menu/pause_menu.gd<>uid://b2om50ho0qbh8::::res://Fonts/BLKCHCRY.otf<>uid://d48hqrcmb3v3::::res://Sprites/Buttons/tres/Normal Brown Button.tres<>uid://cw8yhi13l41fh::::res://Sprites/Buttons/tres/Hover Brown Button.tres
-::res://Scenes/player/::1713147155
+pause_menu.tscn::PackedScene::415568209989444780::1713148486::0::1::::<><>::res://Scenes/Pause Menu/pause_menu.gd<>uid://b2om50ho0qbh8::::res://Fonts/BLKCHCRY.otf<>uid://d48hqrcmb3v3::::res://Sprites/Buttons/tres/Normal Brown Button.tres<>uid://cw8yhi13l41fh::::res://Sprites/Buttons/tres/Hover Brown Button.tres
+::res://Scenes/player/::1713148486
 player.gd::GDScript::-1::1713065704::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::9203744487414567948::1713147155::0::1::::<><>::res://Scenes/player/player.gd<>uid://dwcsapqfi21ys::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_1.png<>uid://3v10wxhov6wu::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_2.png<>uid://h0yxqmq7y1og::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_3.png<>uid://vttbtaqw7hg4::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_4.png
-::res://Scenes/World/::1713147155
+player.tscn::PackedScene::9203744487414567948::1713148486::0::1::::<><>::res://Scenes/player/player.gd<>uid://dwcsapqfi21ys::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_1.png<>uid://3v10wxhov6wu::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_2.png<>uid://h0yxqmq7y1og::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_3.png<>uid://vttbtaqw7hg4::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_4.png
+::res://Scenes/World/::1713148486
 world.gd::GDScript::-1::1713131065::0::1::::<>Node2D<>::
-world.tscn::PackedScene::8827682834296294187::1713141041::0::1::::<><>::res://Scenes/world/world.gd<>uid://ceodsknvecwpo::::res://Sprites/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png<>uid://d4emleblx5wfk::::res://Scenes/player/player.tscn<>uid://q1nrdwh5h3ts::::res://Scenes/loading_screen/loading_screen.tscn<>uid://b2om50ho0qbh8::::res://Fonts/BLKCHCRY.otf<>uid://f6kl27emvlii::::res://Scenes/Pause Menu/pause_menu.tscn<>uid://do8ww1urgvtat::::res://Scenes/machines/furnace/furnace.tscn
-::res://Scenes/world/::1713147155
-world.gd::GDScript::-1::1713131065::0::1::::<>Node2D<>::
-world.tscn::PackedScene::8827682834296294187::1713147155::0::1::::<><>::res://Scenes/world/world.gd<>uid://ceodsknvecwpo::::res://Sprites/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png<>uid://d4emleblx5wfk::::res://Scenes/player/player.tscn<>uid://q1nrdwh5h3ts::::res://Scenes/loading_screen/loading_screen.tscn<>uid://b2om50ho0qbh8::::res://Fonts/BLKCHCRY.otf<>uid://f6kl27emvlii::::res://Scenes/Pause Menu/pause_menu.tscn<>uid://do8ww1urgvtat::::res://Scenes/machines/furnace/furnace.tscn
+world.tscn::PackedScene::8827682834296294187::1713148486::0::1::::<><>::res://Scenes/world/world.gd<>uid://ceodsknvecwpo::::res://Sprites/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png<>uid://d4emleblx5wfk::::res://Scenes/player/player.tscn<>uid://q1nrdwh5h3ts::::res://Scenes/loading_screen/loading_screen.tscn<>uid://b2om50ho0qbh8::::res://Fonts/BLKCHCRY.otf<>uid://f6kl27emvlii::::res://Scenes/Pause Menu/pause_menu.tscn<>uid://do8ww1urgvtat::::res://Scenes/machines/furnace/furnace.tscn
 ::res://SFX/::1713066310
 ::res://Sprites/::1713139176
 Furnace.png::CompressedTexture2D::3980601691203418434::1713139176::1713139176::1::::<><>::
