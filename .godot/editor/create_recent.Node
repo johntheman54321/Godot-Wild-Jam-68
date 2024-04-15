@@ -1,6 +1,7 @@
-Panel
 Label
+TextureRect
 Control
+Panel
 Container
 AudioStreamPlayer
 Node2D

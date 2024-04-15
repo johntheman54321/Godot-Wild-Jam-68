@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dx1gv8nvax1i2"]
+[gd_scene load_steps=12 format=3 uid="uid://dx1gv8nvax1i2"]
 
 [ext_resource type="Script" path="res://Scenes/world/world.gd" id="1_r4sy2"]
 [ext_resource type="Texture2D" uid="uid://ceodsknvecwpo" path="res://Sprites/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png" id="2_vjgdf"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://f6kl27emvlii" path="res://Scenes/Pause Menu/pause_menu.tscn" id="6_5fyle"]
 [ext_resource type="PackedScene" uid="uid://do8ww1urgvtat" path="res://Scenes/machines/furnace/furnace.tscn" id="6_36x2y"]
 [ext_resource type="FontFile" uid="uid://b3tdwh3h4808i" path="res://Fonts/Platypi-VariableFont_wght.otf" id="7_x0q25"]
+[ext_resource type="Texture2D" uid="uid://cqoflndgdhuvn" path="res://Sprites/Coin.png" id="8_rxrcj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ve46v"]
 texture = ExtResource("2_vjgdf")
@@ -361,7 +362,7 @@ platform_wall_layers = 1
 texture_filter = 2
 texture_repeat = 3
 offset_right = 242.0
-offset_bottom = 96.0
+offset_bottom = 92.0
 theme_override_fonts/font = ExtResource("5_ogirs")
 theme_override_font_sizes/font_size = 70
 text = "Hour 0"
@@ -397,6 +398,29 @@ offset_right = 172.0
 offset_bottom = 76.0
 theme_override_fonts/font = ExtResource("7_x0q25")
 text = "Bronze: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Money" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 32.0
+offset_top = 96.0
+offset_right = 124.0
+offset_bottom = 140.0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Money"]
+layout_mode = 0
+offset_right = 44.0
+offset_bottom = 44.0
+texture = ExtResource("8_rxrcj")
+
+[node name="Label" type="Label" parent="CanvasLayer/Money"]
+layout_mode = 0
+offset_left = 44.0
+offset_right = 88.0
+offset_bottom = 44.0
+text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
