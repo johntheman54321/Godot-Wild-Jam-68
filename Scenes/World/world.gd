@@ -5,6 +5,25 @@ var day = 0
 var paused = false
 @onready var pauseMenu = $Camera2D/Pause_Menu
 
+var npc = preload("res://Scenes/npc/npc.tscn")
+
+@onready var paths = {
+	$"Npc Targets/Path1/PathFollow2D" : false,
+	$"Npc Targets/Path2/PathFollow2D" : false,
+	$"Npc Targets/Path3/PathFollow2D" : false,
+}
+
+func instantiate_npc():
+	for i in paths:
+		if paths[i] == false:
+			var new_npc = npc.instantiate()
+			new_npc.global_position = i.global_position
+			add_child(new_npc)
+			return
+
+func _ready():
+	instantiate_npc()
+
 func _process(delta):
 	$CanvasLayer/Timer_UI.text = "Hour " + str(hour)
 	if Input.is_action_just_pressed("Pause"):
@@ -26,4 +45,3 @@ func PauseMenu():
 		
 	paused = !paused
 	print(paused)
-	
