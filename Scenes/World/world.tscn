@@ -1,8 +1,9 @@
-[gd_scene load_steps=15 format=3 uid="uid://dx1gv8nvax1i2"]
+[gd_scene load_steps=16 format=3 uid="uid://dx1gv8nvax1i2"]
 
 [ext_resource type="Script" path="res://Scenes/world/world.gd" id="1_r4sy2"]
 [ext_resource type="Texture2D" uid="uid://ceodsknvecwpo" path="res://Sprites/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png" id="2_vjgdf"]
 [ext_resource type="PackedScene" uid="uid://d4emleblx5wfk" path="res://Scenes/player/player.tscn" id="3_qopbf"]
+[ext_resource type="PackedScene" uid="uid://c01b16iohq8ey" path="res://Scenes/ShopKeeper/shop_keeper.tscn" id="4_lhwbr"]
 [ext_resource type="PackedScene" uid="uid://q1nrdwh5h3ts" path="res://Scenes/loading_screen/loading_screen.tscn" id="4_ulie7"]
 [ext_resource type="FontFile" uid="uid://b2om50ho0qbh8" path="res://Fonts/BLKCHCRY.otf" id="5_ogirs"]
 [ext_resource type="PackedScene" uid="uid://f6kl27emvlii" path="res://Scenes/Pause Menu/pause_menu.tscn" id="6_5fyle"]
@@ -389,6 +390,13 @@ curve = SubResource("Curve2D_hh810")
 [node name="PathFollow2D" type="PathFollow2D" parent="Npc Targets/Path3"]
 position = Vector2(-80, 116)
 rotation = -1.5708
+
+[node name="Npcs" type="Node2D" parent="."]
+
+[node name="Shop keeper" parent="Npcs" node_paths=PackedStringArray("player") instance=ExtResource("4_lhwbr")]
+position = Vector2(-72, 134)
+scale = Vector2(0.7, 0.7)
+player = NodePath("../../Player")
 
 [node name="Furnace" parent="." node_paths=PackedStringArray("player") instance=ExtResource("6_36x2y")]
 position = Vector2(-240, 48)
