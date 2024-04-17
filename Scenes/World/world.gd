@@ -16,13 +16,12 @@ var npc = preload("res://Scenes/npc/npc.tscn")
 func instantiate_npc():
 	for i in paths:
 		if paths[i] == false:
+			paths[i] = true
 			var new_npc = npc.instantiate()
 			new_npc.global_position = i.global_position
+			new_npc.path = i
 			add_child(new_npc)
 			return
-
-func _ready():
-	instantiate_npc()
 
 func _process(delta):
 	$CanvasLayer/Timer_UI.text = "Hour " + str(hour)
@@ -34,6 +33,8 @@ func _on_timer_timeout():
 	if hour == 24:
 		hour = 0
 		day += 1
+	
+	instantiate_npc()
 
 func PauseMenu():
 	if paused:

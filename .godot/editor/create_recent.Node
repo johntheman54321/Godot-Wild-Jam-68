@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Sprite2D
 Label
 Button
@@ -9,6 +10,15 @@ AudioListener2D
 CollisionShape2D
 Area2D
 AnimatedSprite2D
+=======
+CollisionShape2D
+Area2D
+AnimatedSprite2D
+Camera2D
+AudioListener2D
+Node2D
+Sprite2D
+>>>>>>> cbfcad09ea7603fa883ffd17d9112badbe21dd78
 PathFollow2D
 Path2D
 Marker2D

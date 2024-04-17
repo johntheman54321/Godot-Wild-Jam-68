@@ -1,1 +1,13 @@
+<<<<<<< HEAD
 res://Scenes/ShopKeeper/shop_keeper.tscn
+=======
+res://Scenes/machines/furnace/furnace.tscn
+res://Scenes/machines/furnace/furnace.gd
+res://Scenes/world/world.tscn
+res://Scenes/player/player.tscn
+res://Scenes/Pause Menu/pause_menu.tscn
+res://Scenes/npc/npc.tscn
+res://Scenes/ShopKeeper/shop_keeper.tscn
+res://Scenes/npc/npc.gd
+res://Scenes/world/world.gd
+>>>>>>> cbfcad09ea7603fa883ffd17d9112badbe21dd78
