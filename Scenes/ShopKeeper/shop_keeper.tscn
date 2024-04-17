@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://c01b16iohq8ey"]
+[gd_scene load_steps=7 format=3 uid="uid://c01b16iohq8ey"]
 
 [ext_resource type="Script" path="res://Scenes/ShopKeeper/shop_keeper.gd" id="1_7aent"]
 [ext_resource type="Texture2D" uid="uid://cbrs3nyv6p0n8" path="res://Sprites/Npcs/Shopkeeper/Shopkeeper- outline.png" id="1_hxb4g"]
 [ext_resource type="Texture2D" uid="uid://1vpakk2ul2y8" path="res://Sprites/Npcs/Shopkeeper/Shopkeeeper-no outline.png" id="2_5k4jy"]
+[ext_resource type="Texture2D" uid="uid://78mi3l1mf7vc" path="res://Sprites/ores/coal.png" id="4_vi7sx"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vtl05"]
 animations = [{
@@ -38,6 +39,59 @@ animation = &"Non-Interactable"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0, 8)
 shape = SubResource("RectangleShape2D_insmt")
+
+[node name="Tab" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Tab"]
+offset_left = 12.0
+offset_top = -20.0
+offset_right = 52.0
+offset_bottom = 20.0
+
+[node name="Control" type="Control" parent="Tab"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 12.0
+offset_top = -24.0
+offset_right = 52.0
+offset_bottom = 16.0
+
+[node name="+" type="Button" parent="Tab/Control"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 6.0
+offset_right = 245.0
+offset_bottom = 219.0
+scale = Vector2(0.05, 0.05)
+theme_override_font_sizes/font_size = 150
+text = "+"
+
+[node name="+2" type="Button" parent="Tab/Control"]
+offset_left = 25.0
+offset_top = 31.0
+offset_right = 245.0
+offset_bottom = 244.0
+scale = Vector2(0.05, 0.05)
+theme_override_font_sizes/font_size = 150
+text = "-
+"
+
+[node name="Label" type="Label" parent="Tab"]
+offset_left = 30.0
+offset_top = -10.0
+offset_right = 459.0
+offset_bottom = 335.0
+scale = Vector2(0.05, 0.05)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 250
+text = "0
+"
+horizontal_alignment = 1
+
+[node name="coal" type="Sprite2D" parent="Tab"]
+position = Vector2(23, 2)
+scale = Vector2(0.0175, 0.0166667)
+texture = ExtResource("4_vi7sx")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

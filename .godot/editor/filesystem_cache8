@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713387612
-default_bus_layout.tres::AudioBusLayout::750229254839676878::1713147067::0::1::::<><>::
+::res://::1713397529
 icon.svg::CompressedTexture2D::1346206398989664400::1712956287::1713307923::1::::<><>::
 README.md::TextFile::-1::1712958425::0::1::::<><>::
 ::res://Fonts/::1713141002
 BLKCHCRY.otf::FontFile::4311204252774675875::1713066550::1713140323::1::::<><>::
 Platypi-VariableFont_wght.otf::FontFile::4391153332605454086::1713141002::1713141002::1::::<><>::
-::res://Music/::1713147586
+::res://Music/::1713391164
+default_bus_layout.tres::AudioBusLayout::750229254839676878::1713147067::0::1::::<><>::
 Medieval Song Village Consort [No Copyright Music].mp3::AudioStreamMP3::3056342008308430016::1713147585::1713147586::1::::<><>::
 Royalty Free Medieval Music - _Celebration_ by Alexander Nakarada.mp3::AudioStreamMP3::3070292046757444759::1713147585::1713147586::1::::<><>::
 _Dungeons and Dragons_ - Royalty Free Music For Commercial Use - Epic-Celtic Fantasy.mp3::AudioStreamMP3::4354378753990489966::1713147585::1713147586::1::::<><>::
@@ -15,9 +15,9 @@ _Dungeons and Dragons_ - Royalty Free Music For Commercial Use - Epic-Celtic Fan
 loading_screen.gd::GDScript::-1::1713066085::0::1::::<>Node2D<>::
 loading_screen.tscn::PackedScene::1177515191130613376::1713111627::0::1::::<><>::res://Scenes/loading_screen/loading_screen.gd
 ::res://Scenes/machines/::1713139176
-::res://Scenes/machines/furnace/::1713391142
+::res://Scenes/machines/furnace/::1713391212
 furnace.gd::GDScript::-1::1713391115::0::1::::<>StaticBody2D<>::
-furnace.tscn::PackedScene::8211406786486958727::1713391142::0::1::::<><>::uid://bwyh6tdfh4n35::::res://Sprites/Furnace.png<>res://Scenes/machines/furnace/furnace.gd<>uid://b3tdwh3h4808i::::res://Fonts/Platypi-VariableFont_wght.otf<>uid://bj75d51xy58m3::::res://SFX/fireplace-with-crackling-sounds-2-min-rk-178392.mp3
+furnace.tscn::PackedScene::8211406786486958727::1713391212::0::1::::<><>::uid://bwyh6tdfh4n35::::res://Sprites/Furnace.png<>res://Scenes/machines/furnace/furnace.gd<>uid://b3tdwh3h4808i::::res://Fonts/Platypi-VariableFont_wght.otf<>uid://bj75d51xy58m3::::res://SFX/fireplace-with-crackling-sounds-2-min-rk-178392.mp3
 ::res://Scenes/Music Scene/::1713224045
 Music.gd::GDScript::-1::1713213567::0::1::::<>Node2D<>::
 Music.tscn::PackedScene::104437627986014443::1713224045::0::1::::<><>::uid://bjsrrhlf7h4jc
@@ -35,13 +35,10 @@ shop_keeper.gd::GDScript::-1::1713383746::0::1::::<>Node2D<>::
 shop_keeper.tscn::PackedScene::6581345068805266900::1713391142::0::1::::<><>::res://Scenes/ShopKeeper/shop_keeper.gd<>uid://cbrs3nyv6p0n8::::res://Sprites/Npcs/Shopkeeper/Shopkeeper- outline.png<>uid://1vpakk2ul2y8::::res://Sprites/Npcs/Shopkeeper/Shopkeeeper-no outline.png
 ::res://Scenes/World/::1713391142
 world.gd::GDScript::-1::1713307897::0::1::::<>Node2D<>::
-world.tscn::PackedScene::8827682834296294187::1713383913::0::1::::<><>::res://Scenes/world/world.gd<>uid://ceodsknvecwpo::::res://Sprites/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png<>uid://d4emleblx5wfk::::res://Scenes/player/player.tscn<>uid://c01b16iohq8ey::::res://Scenes/ShopKeeper/shop_keeper.tscn<>uid://q1nrdwh5h3ts::::res://Scenes/loading_screen/loading_screen.tscn<>uid://b2om50ho0qbh8::::res://Fonts/BLKCHCRY.otf<>uid://f6kl27emvlii::::res://Scenes/Pause Menu/pause_menu.tscn<>uid://do8ww1urgvtat::::res://Scenes/machines/furnace/furnace.tscn<>uid://b3tdwh3h4808i::::res://Fonts/Platypi-VariableFont_wght.otf<>uid://cqoflndgdhuvn::::res://Sprites/Coin.png
-::res://Scenes/world/::1713391142
-world.gd::GDScript::-1::1713307897::0::1::::<>Node2D<>::
-world.tscn::PackedScene::8827682834296294187::1713391142::0::1::::<><>::res://Scenes/world/world.gd<>uid://ceodsknvecwpo::::res://Sprites/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png<>uid://d4emleblx5wfk::::res://Scenes/player/player.tscn<>uid://c01b16iohq8ey::::res://Scenes/ShopKeeper/shop_keeper.tscn<>uid://q1nrdwh5h3ts::::res://Scenes/loading_screen/loading_screen.tscn<>uid://b2om50ho0qbh8::::res://Fonts/BLKCHCRY.otf<>uid://f6kl27emvlii::::res://Scenes/Pause Menu/pause_menu.tscn<>uid://do8ww1urgvtat::::res://Scenes/machines/furnace/furnace.tscn<>uid://b3tdwh3h4808i::::res://Fonts/Platypi-VariableFont_wght.otf<>uid://cqoflndgdhuvn::::res://Sprites/Coin.png
+world.tscn::PackedScene::8827682834296294187::1713391142::0::1::::<><>::res://Scenes/world/world.gd<>uid://ceodsknvecwpo
 ::res://SFX/::1713389995
 fireplace-with-crackling-sounds-2-min-rk-178392.mp3::AudioStreamMP3::3086008848673737608::1713222998::1713389995::1::::<><>::
-::res://Sprites/::1713383511
+::res://Sprites/::1713397952
 Coin.png::CompressedTexture2D::5925088070563228943::1713222376::1713222376::1::::<><>::
 Furnace.png::CompressedTexture2D::3980601691203418434::1713222376::1713139176::1::::<><>::
 ::res://Sprites/2D Pixel Dungeon Asset Pack/::1713029088
@@ -280,3 +277,5 @@ Normal Brown Button.tres::StyleBoxTexture::272450513842714910::1713110096::0::1:
 ::res://Sprites/Npcs/Shopkeeper/::1713383551
 Shopkeeeper-no outline.png::CompressedTexture2D::1869173164251087413::1713383537::1713383542::1::::<><>::
 Shopkeeper- outline.png::CompressedTexture2D::4879268261817431239::1713383549::1713383551::1::::<><>::
+::res://Sprites/ores/::1713397968
+coal.png::CompressedTexture2D::2314911841409689524::1713397968::1713397969::1::::<><>::
