@@ -33,7 +33,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nxuho"]
-size = Vector2(32, 24)
+size = Vector2(32, 23)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_owajv"]
 size = Vector2(32, 16)
@@ -45,11 +45,13 @@ radius = 47.0106
 script = ExtResource("1_wqvqv")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 0.5)
+scale = Vector2(1, 0.96875)
 sprite_frames = SubResource("SpriteFrames_7kom4")
 animation = &"1-unlit"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -4)
+position = Vector2(0, -3.5)
 shape = SubResource("RectangleShape2D_nxuho")
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -65,7 +67,7 @@ shape = SubResource("CircleShape2D_27kj4")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Cooking_SFX"]
 stream = ExtResource("3_w6vi5")
-volume_db = -8.525
+volume_db = -7.0
 bus = &"SFX"
 
 [node name="Tooltip" type="Label" parent="."]

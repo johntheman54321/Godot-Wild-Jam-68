@@ -394,13 +394,25 @@ rotation = -1.5708
 [node name="Npcs" type="Node2D" parent="."]
 
 [node name="Shop keeper" parent="Npcs" node_paths=PackedStringArray("player") instance=ExtResource("4_lhwbr")]
-position = Vector2(-72, 134)
+position = Vector2(-72, 45)
 scale = Vector2(0.7, 0.7)
 player = NodePath("../../Player")
 
 [node name="Furnace" parent="." node_paths=PackedStringArray("player") instance=ExtResource("6_36x2y")]
 position = Vector2(-240, 48)
 player = NodePath("../Player")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-192, 112)
+zoom = Vector2(3, 3)
+limit_left = -768
+limit_top = -512
+limit_right = 768
+limit_bottom = 512
+
+[node name="Pause_Menu" parent="Camera2D" instance=ExtResource("6_5fyle")]
+visible = false
+scale = Vector2(0.52, 0.520001)
 
 [node name="Player" parent="." instance=ExtResource("3_qopbf")]
 position = Vector2(-192, 128)
@@ -473,17 +485,5 @@ offset_bottom = 44.0
 text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-192, 112)
-zoom = Vector2(3, 3)
-limit_left = -768
-limit_top = -512
-limit_right = 768
-limit_bottom = 512
-
-[node name="Pause_Menu" parent="Camera2D" instance=ExtResource("6_5fyle")]
-visible = false
-scale = Vector2(0.52, 0.520001)
 
 [connection signal="timeout" from="CanvasLayer/Timer_UI/Timer" to="." method="_on_timer_timeout"]
