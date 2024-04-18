@@ -119,6 +119,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_qtjlw")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_tq24s")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_8txcq")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_65vsi")
+toggle_mode = true
 action_mode = 0
 button_mask = 3
 text = "▲"
@@ -142,6 +143,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_6tn64")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_4fdrm")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_8nv3i")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_t3rwy")
+action_mode = 0
 button_mask = 3
 text = "▼"
 
