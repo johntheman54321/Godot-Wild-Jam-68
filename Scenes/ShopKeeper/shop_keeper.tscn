@@ -1,9 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://c01b16iohq8ey"]
+[gd_scene load_steps=8 format=3 uid="uid://c01b16iohq8ey"]
 
 [ext_resource type="Script" path="res://Scenes/ShopKeeper/shop_keeper.gd" id="1_7aent"]
 [ext_resource type="Texture2D" uid="uid://cbrs3nyv6p0n8" path="res://Sprites/Npcs/Shopkeeper/Shopkeeper- outline.png" id="1_hxb4g"]
 [ext_resource type="Texture2D" uid="uid://1vpakk2ul2y8" path="res://Sprites/Npcs/Shopkeeper/Shopkeeeper-no outline.png" id="2_5k4jy"]
 [ext_resource type="Texture2D" uid="uid://78mi3l1mf7vc" path="res://Sprites/ores/coal.png" id="4_vi7sx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ukrk"]
+size = Vector2(20, 26)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vtl05"]
 animations = [{
@@ -25,10 +28,14 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_insmt"]
-size = Vector2(24, 16)
+size = Vector2(32, 32)
 
-[node name="Shop keeper" type="Node2D"]
+[node name="Shop Keeper" type="StaticBody2D"]
 script = ExtResource("1_7aent")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_8ukrk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_vtl05")
@@ -37,50 +44,75 @@ animation = &"Non-Interactable"
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0, 8)
+position = Vector2(0, 16)
 shape = SubResource("RectangleShape2D_insmt")
 
-[node name="Tab" type="Node2D" parent="."]
+[node name="OrderMenu" type="ColorRect" parent="."]
+offset_left = -20.0
+offset_top = -60.0
+offset_right = 20.0
+offset_bottom = -20.0
 
-[node name="ColorRect" type="ColorRect" parent="Tab"]
-offset_left = 12.0
-offset_top = -20.0
-offset_right = 52.0
-offset_bottom = 20.0
-
-[node name="Control" type="Control" parent="Tab"]
+[node name="Amount" type="Control" parent="OrderMenu"]
 layout_mode = 3
 anchors_preset = 0
-offset_left = 12.0
-offset_top = -24.0
-offset_right = 52.0
-offset_bottom = 16.0
+offset_left = 22.0
+offset_right = 35.0
+offset_bottom = 40.0
 
-[node name="+" type="Button" parent="Tab/Control"]
+[node name="more" type="Button" parent="OrderMenu/Amount"]
 layout_mode = 0
-offset_left = 25.0
-offset_top = 6.0
-offset_right = 245.0
-offset_bottom = 219.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 221.0
+offset_bottom = 214.0
 scale = Vector2(0.05, 0.05)
 theme_override_font_sizes/font_size = 150
-text = "+"
+text = "▲"
 
-[node name="+2" type="Button" parent="Tab/Control"]
-offset_left = 25.0
-offset_top = 31.0
-offset_right = 245.0
-offset_bottom = 244.0
+[node name="less" type="Button" parent="OrderMenu/Amount"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 26.0
+offset_right = 221.0
+offset_bottom = 239.0
 scale = Vector2(0.05, 0.05)
 theme_override_font_sizes/font_size = 150
-text = "-
-"
+text = "▼"
 
-[node name="Label" type="Label" parent="Tab"]
-offset_left = 30.0
-offset_top = -10.0
-offset_right = 459.0
-offset_bottom = 335.0
+[node name="Type" type="Control" parent="OrderMenu"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 4.0
+offset_right = 17.0
+offset_bottom = 40.0
+
+[node name="more" type="Button" parent="OrderMenu/Type"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 221.0
+offset_bottom = 214.0
+scale = Vector2(0.05, 0.05)
+theme_override_font_sizes/font_size = 150
+text = "▲"
+
+[node name="less" type="Button" parent="OrderMenu/Type"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 26.0
+offset_right = 221.0
+offset_bottom = 239.0
+scale = Vector2(0.05, 0.05)
+theme_override_font_sizes/font_size = 150
+text = "▼"
+
+[node name="Label" type="Label" parent="OrderMenu"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 10.0
+offset_right = 447.0
+offset_bottom = 355.0
 scale = Vector2(0.05, 0.05)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 250
@@ -88,9 +120,9 @@ text = "0
 "
 horizontal_alignment = 1
 
-[node name="coal" type="Sprite2D" parent="Tab"]
-position = Vector2(23, 2)
-scale = Vector2(0.0175, 0.0166667)
+[node name="coal" type="Sprite2D" parent="OrderMenu"]
+position = Vector2(11, 20.5)
+scale = Vector2(0.015, 0.0141667)
 texture = ExtResource("4_vi7sx")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

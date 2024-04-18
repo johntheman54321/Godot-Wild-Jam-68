@@ -11,6 +11,7 @@ var npc = preload("res://Scenes/npc/npc.tscn")
 	$"Npc Targets/Path1/PathFollow2D" : false,
 	$"Npc Targets/Path2/PathFollow2D" : false,
 	$"Npc Targets/Path3/PathFollow2D" : false,
+	$"Npc Targets/Path4/PathFollow2D" : false
 }
 
 func instantiate_npc():
