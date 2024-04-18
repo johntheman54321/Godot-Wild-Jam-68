@@ -11,7 +11,11 @@ var npc = preload("res://Scenes/npc/npc.tscn")
 	$"Npc Targets/Path1/PathFollow2D" : false,
 	$"Npc Targets/Path2/PathFollow2D" : false,
 	$"Npc Targets/Path3/PathFollow2D" : false,
-	$"Npc Targets/Path4/PathFollow2D" : false
+	$"Npc Targets/Path4/PathFollow2D" : false,
+	$"Npc Targets/Path5/PathFollow2D" : false,
+	$"Npc Targets/Path6/PathFollow2D" : false,
+	$"Npc Targets/Path7/PathFollow2D" : false,
+	$"Npc Targets/Path8/PathFollow2D" : false
 }
 
 func instantiate_npc():
@@ -21,13 +25,14 @@ func instantiate_npc():
 			var new_npc = npc.instantiate()
 			new_npc.global_position = i.global_position
 			new_npc.path = i
-			add_child(new_npc)
+			$Npcs.add_child(new_npc)
 			return
 
 func _process(delta):
 	$CanvasLayer/Timer_UI.text = "Hour " + str(hour)
 	if Input.is_action_just_pressed("Pause"):
 		PauseMenu()
+	$CanvasLayer/Money/Label.text = str($Player.money)
 
 func _on_timer_timeout():
 	hour += 1

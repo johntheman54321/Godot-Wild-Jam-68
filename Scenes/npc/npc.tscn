@@ -1,25 +1,49 @@
-[gd_scene load_steps=5 format=3 uid="uid://b2tf34vqtfj0i"]
+[gd_scene load_steps=11 format=3 uid="uid://b2tf34vqtfj0i"]
 
 [ext_resource type="Script" path="res://Scenes/npc/npc.gd" id="1_tkfr2"]
 [ext_resource type="Texture2D" uid="uid://bu027b6xl7ilq" path="res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest2/v1/priest2_v1_1.png" id="2_q2umo"]
+[ext_resource type="Texture2D" uid="uid://ciiuxoelu61j" path="res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest2/v1/priest2_v1_2.png" id="3_5pnrf"]
 [ext_resource type="Texture2D" uid="uid://ckgqu8b18f7fo" path="res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest3/v1/priest3_v1_1.png" id="3_74t3f"]
+[ext_resource type="Texture2D" uid="uid://ddi72d1w2awvl" path="res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest2/v1/priest2_v1_3.png" id="4_ho7ks"]
+[ext_resource type="Texture2D" uid="uid://bl2ygijgey5sx" path="res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest2/v1/priest2_v1_4.png" id="5_x8ox6"]
+[ext_resource type="Texture2D" uid="uid://b62xohgj26ecs" path="res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest3/v1/priest3_v1_2.png" id="7_gtm66"]
+[ext_resource type="Texture2D" uid="uid://c6opnrjy1ibg2" path="res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest3/v1/priest3_v1_3.png" id="8_e7a8a"]
+[ext_resource type="Texture2D" uid="uid://c0qfln4pfkhix" path="res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest3/v1/priest3_v1_4.png" id="9_xasun"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4na3b"]
 animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_q2umo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5pnrf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ho7ks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_x8ox6")
 }],
 "loop": true,
-"name": &"priest",
+"name": &"npc1",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("3_74t3f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_gtm66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_e7a8a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_xasun")
 }],
 "loop": true,
-"name": &"priest_with_dagger",
+"name": &"npc2",
 "speed": 5.0
 }]
 
@@ -28,4 +52,4 @@ script = ExtResource("1_tkfr2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_4na3b")
-animation = &"priest"
+animation = &"npc2"
