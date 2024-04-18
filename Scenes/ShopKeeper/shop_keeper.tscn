@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://c01b16iohq8ey"]
+[gd_scene load_steps=28 format=3 uid="uid://c01b16iohq8ey"]
 
 [ext_resource type="Script" path="res://Scenes/ShopKeeper/shop_keeper.gd" id="1_7aent"]
 [ext_resource type="Texture2D" uid="uid://cbrs3nyv6p0n8" path="res://Sprites/Npcs/Shopkeeper/Shopkeeper- outline.png" id="1_hxb4g"]
@@ -29,6 +29,46 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_insmt"]
 size = Vector2(32, 32)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_26ko1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qtjlw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tq24s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8txcq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_65vsi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mffln"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6tn64"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4fdrm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8nv3i"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t3rwy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q8ie5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mayqp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ym08l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7jpu3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ou68j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c3vwr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4jej2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xgavs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mk6wq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fdf0w"]
 
 [node name="Shop Keeper" type="StaticBody2D"]
 script = ExtResource("1_7aent")
@@ -67,7 +107,20 @@ offset_top = 1.0
 offset_right = 221.0
 offset_bottom = 214.0
 scale = Vector2(0.05, 0.05)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 150
+theme_override_styles/normal = SubResource("StyleBoxEmpty_26ko1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_qtjlw")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_tq24s")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_8txcq")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_65vsi")
+action_mode = 0
+button_mask = 3
 text = "▲"
 
 [node name="less" type="Button" parent="OrderMenu/Amount"]
@@ -77,7 +130,19 @@ offset_top = 26.0
 offset_right = 221.0
 offset_bottom = 239.0
 scale = Vector2(0.05, 0.05)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 150
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mffln")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6tn64")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4fdrm")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_8nv3i")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_t3rwy")
+button_mask = 3
 text = "▼"
 
 [node name="Type" type="Control" parent="OrderMenu"]
@@ -94,7 +159,18 @@ offset_top = 1.0
 offset_right = 221.0
 offset_bottom = 214.0
 scale = Vector2(0.05, 0.05)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 150
+theme_override_styles/normal = SubResource("StyleBoxEmpty_q8ie5")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_mayqp")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ym08l")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_7jpu3")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ou68j")
 text = "▲"
 
 [node name="less" type="Button" parent="OrderMenu/Type"]
@@ -104,7 +180,18 @@ offset_top = 26.0
 offset_right = 221.0
 offset_bottom = 239.0
 scale = Vector2(0.05, 0.05)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 150
+theme_override_styles/normal = SubResource("StyleBoxEmpty_c3vwr")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4jej2")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_xgavs")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_mk6wq")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_fdf0w")
 text = "▼"
 
 [node name="Label" type="Label" parent="OrderMenu"]
@@ -127,3 +214,5 @@ texture = ExtResource("4_vi7sx")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="pressed" from="OrderMenu/Amount/more" to="." method="_on_more_pressed"]
+[connection signal="pressed" from="OrderMenu/Amount/less" to="." method="_on_less_pressed"]

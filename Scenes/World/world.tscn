@@ -411,8 +411,6 @@ curve = SubResource("Curve2D_fntqj")
 position = Vector2(-80, 116)
 rotation = -1.5708
 
-[node name="Node2D" type="Node2D" parent="Npc Targets/Path4/PathFollow2D"]
-
 [node name="Furnace" parent="." node_paths=PackedStringArray("player") instance=ExtResource("6_36x2y")]
 position = Vector2(-240, 48)
 player = NodePath("../Player")

@@ -1,65 +1,31 @@
-[gd_scene load_steps=12 format=3 uid="uid://b2tf34vqtfj0i"]
+[gd_scene load_steps=5 format=3 uid="uid://b2tf34vqtfj0i"]
 
 [ext_resource type="Script" path="res://Scenes/npc/npc.gd" id="1_tkfr2"]
-[ext_resource type="Texture2D" uid="uid://cdaotcmchuhua" path="res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest2/v2/priest2_v2_1.png" id="2_hj7dk"]
-[ext_resource type="Texture2D" uid="uid://bunfewmn4apki" path="res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest2/v2/priest2_v2_2.png" id="3_kfrk5"]
-[ext_resource type="Texture2D" uid="uid://baa5t2q4f3qx5" path="res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest2/v2/priest2_v2_3.png" id="4_28usf"]
-[ext_resource type="Texture2D" uid="uid://b0cklp38x2em8" path="res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest2/v2/priest2_v2_4.png" id="5_chuqo"]
-[ext_resource type="Texture2D" uid="uid://c62c455a3f1wp" path="res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest3/v2/priest3_v2_1.png" id="6_rllj3"]
-[ext_resource type="Texture2D" uid="uid://dmijveuyivk6d" path="res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest3/v2/priest3_v2_2.png" id="7_krbu2"]
-[ext_resource type="Texture2D" uid="uid://d4a6u5xw81jgw" path="res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest3/v2/priest3_v2_3.png" id="8_klm6j"]
-[ext_resource type="Texture2D" uid="uid://ckdx6pdjanfii" path="res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest3/v2/priest3_v2_4.png" id="9_2rwi8"]
+[ext_resource type="Texture2D" uid="uid://bu027b6xl7ilq" path="res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest2/v1/priest2_v1_1.png" id="2_q2umo"]
+[ext_resource type="Texture2D" uid="uid://ckgqu8b18f7fo" path="res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest3/v1/priest3_v1_1.png" id="3_74t3f"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_v3vka"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_4na3b"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_hj7dk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_kfrk5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_28usf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_chuqo")
+"texture": ExtResource("2_q2umo")
 }],
 "loop": true,
-"name": &"npc1",
+"name": &"priest",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_rllj3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_krbu2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_klm6j")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_2rwi8")
+"texture": ExtResource("3_74t3f")
 }],
 "loop": true,
-"name": &"npc2",
+"name": &"priest_with_dagger",
 "speed": 5.0
 }]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_p3e07"]
-size = Vector2(20, 38)
 
 [node name="npc" type="Node2D"]
 script = ExtResource("1_tkfr2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_v3vka")
-animation = &"npc1"
-autoplay = "npc1"
-
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0, -9)
-shape = SubResource("RectangleShape2D_p3e07")
+sprite_frames = SubResource("SpriteFrames_4na3b")
+animation = &"priest"
