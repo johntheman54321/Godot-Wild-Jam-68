@@ -25,7 +25,7 @@ func calculateCost():
 
 func _process(delta):
 	$OrderMenu/Amount/Count.text = str(quantity)
-	$OrderMenu/Cost.text = str(cost)
+	$OrderMenu/OrderButton.text = "Order " + str(cost) + "$"
 	if player.money < cost:
 		$OrderMenu/OrderButton.disabled = true
 	else: 

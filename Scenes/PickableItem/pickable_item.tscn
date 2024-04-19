@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://xasf6fdabsem"]
+
+[ext_resource type="Script" path="res://Scenes/PickableItem/pickable_item.gd" id="1_wclgn"]
+[ext_resource type="Texture2D" uid="uid://cipepka4ijqme" path="res://Sprites/ores/coal32x32.png" id="2_i4ds8"]
+[ext_resource type="Texture2D" uid="uid://eyfeu1exxp2j" path="res://Sprites/ores/coal-1.png" id="3_33bxh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5tnlo"]
+radius = 32.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cxonv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_i4ds8")
+}],
+"loop": true,
+"name": &"coal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_33bxh")
+}],
+"loop": true,
+"name": &"coal-interactable",
+"speed": 5.0
+}]
+
+[node name="PickableItem" type="Node2D"]
+script = ExtResource("1_wclgn")
+
+[node name="InteractableRange" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableRange"]
+shape = SubResource("CircleShape2D_5tnlo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.125, 1.125)
+sprite_frames = SubResource("SpriteFrames_cxonv")
+animation = &"coal"
+
+[connection signal="body_entered" from="InteractableRange" to="." method="_on_interactable_range_body_entered"]
+[connection signal="body_exited" from="InteractableRange" to="." method="_on_interactable_range_body_exited"]

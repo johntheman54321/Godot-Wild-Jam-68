@@ -1,6 +1,6 @@
-[gd_scene load_steps=21 format=3 uid="uid://dx1gv8nvax1i2"]
+[gd_scene load_steps=22 format=3 uid="uid://dx1gv8nvax1i2"]
 
-[ext_resource type="Script" path="res://Scenes/world/world.gd" id="1_r4sy2"]
+[ext_resource type="Script" path="res://Scenes/World/world.gd" id="1_hiyvr"]
 [ext_resource type="Texture2D" uid="uid://ceodsknvecwpo" path="res://Sprites/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png" id="2_vjgdf"]
 [ext_resource type="PackedScene" uid="uid://d4emleblx5wfk" path="res://Scenes/player/player.tscn" id="3_qopbf"]
 [ext_resource type="PackedScene" uid="uid://c01b16iohq8ey" path="res://Scenes/ShopKeeper/shop_keeper.tscn" id="4_lhwbr"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://do8ww1urgvtat" path="res://Scenes/machines/furnace/furnace.tscn" id="6_36x2y"]
 [ext_resource type="FontFile" uid="uid://b3tdwh3h4808i" path="res://Fonts/Platypi-VariableFont_wght.otf" id="7_x0q25"]
 [ext_resource type="Texture2D" uid="uid://cqoflndgdhuvn" path="res://Sprites/Coin.png" id="8_rxrcj"]
+[ext_resource type="PackedScene" uid="uid://xasf6fdabsem" path="res://Scenes/PickableItem/pickable_item.tscn" id="11_5y63n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ve46v"]
 texture = ExtResource("2_vjgdf")
@@ -392,7 +393,7 @@ _data = {
 point_count = 4
 
 [node name="World" type="Node2D"]
-script = ExtResource("1_r4sy2")
+script = ExtResource("1_hiyvr")
 
 [node name="Loading_Screen" parent="." instance=ExtResource("4_ulie7")]
 top_level = true
@@ -409,7 +410,7 @@ layer_1/enabled = true
 layer_1/modulate = Color(1, 1, 1, 1)
 layer_1/y_sort_enabled = false
 layer_1/y_sort_origin = 0
-layer_1/z_index = 50
+layer_1/z_index = 2
 layer_1/tile_data = PackedInt32Array(131064, 131072, 4, 131065, 262144, 4, 131066, 262144, 4, 131067, 131072, 4, 131068, 131072, 4, 131069, 262144, 4, 131070, 65536, 4, 131071, 131072, 4, 65536, 262144, 4, 65537, 262144, 4, 65538, 196608, 4, 65539, 65536, 4, 65540, 131072, 4, 65541, 131072, 4, 65542, 262144, 4, 65543, 65536, 4)
 
 [node name="Npc Targets" type="Node2D" parent="."]
@@ -481,11 +482,12 @@ scale = Vector2(0.7, 0.7)
 player = NodePath("../Player")
 
 [node name="Npcs" type="Node2D" parent="."]
-z_index = 100
+z_index = 3
 
-[node name="Player" parent="." instance=ExtResource("3_qopbf")]
+[node name="Player" parent="." node_paths=PackedStringArray("pickableItem") instance=ExtResource("3_qopbf")]
 position = Vector2(-192, 128)
 platform_wall_layers = 1
+pickableItem = NodePath("../PickableItem")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-192, 112)
@@ -497,9 +499,21 @@ limit_bottom = 512
 
 [node name="Pause_Menu" parent="Camera2D" instance=ExtResource("6_5fyle")]
 visible = false
+top_level = true
+z_index = 1000
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -188.0
+offset_top = 124.0
+offset_right = -188.0
+offset_bottom = 124.0
+grow_horizontal = 2
+grow_vertical = 2
 scale = Vector2(0.52, 0.520001)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 0
 
 [node name="Timer_UI" type="Label" parent="CanvasLayer"]
 texture_filter = 2
@@ -572,5 +586,10 @@ offset_bottom = 44.0
 text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="PickableItem" parent="." node_paths=PackedStringArray("player") instance=ExtResource("11_5y63n")]
+position = Vector2(-120, 80)
+scale = Vector2(0.3, 0.3)
+player = NodePath("../Player")
 
 [connection signal="timeout" from="CanvasLayer/Timer_UI/Timer" to="." method="_on_timer_timeout"]
