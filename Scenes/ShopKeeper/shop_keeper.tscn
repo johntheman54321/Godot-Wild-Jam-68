@@ -3,9 +3,8 @@
 [ext_resource type="Script" path="res://Scenes/ShopKeeper/shop_keeper.gd" id="1_7aent"]
 [ext_resource type="Texture2D" uid="uid://cbrs3nyv6p0n8" path="res://Sprites/Npcs/Shopkeeper/Shopkeeper- outline.png" id="1_hxb4g"]
 [ext_resource type="Texture2D" uid="uid://1vpakk2ul2y8" path="res://Sprites/Npcs/Shopkeeper/Shopkeeeper-no outline.png" id="2_5k4jy"]
-[ext_resource type="Texture2D" uid="uid://78mi3l1mf7vc" path="res://Sprites/ores/coal.png" id="4_vi7sx"]
+[ext_resource type="Texture2D" uid="uid://cipepka4ijqme" path="res://Sprites/ores/coal.png" id="4_vi7sx"]
 [ext_resource type="FontFile" uid="uid://b3tdwh3h4808i" path="res://Fonts/Platypi-VariableFont_wght.otf" id="5_m4os1"]
-[ext_resource type="Texture2D" uid="uid://cqoflndgdhuvn" path="res://Sprites/Coin.png" id="6_e7bkb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8ukrk"]
 size = Vector2(20, 26)
@@ -72,6 +71,22 @@ size = Vector2(32, 32)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fdf0w"]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_p5mv6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_vi7sx")
+}],
+"loop": true,
+"name": &"coal",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"iron_ore",
+"speed": 5.0
+}]
+
 [node name="Shop Keeper" type="StaticBody2D"]
 script = ExtResource("1_7aent")
 
@@ -90,6 +105,7 @@ position = Vector2(0, 16)
 shape = SubResource("RectangleShape2D_insmt")
 
 [node name="OrderMenu" type="ColorRect" parent="."]
+visible = false
 offset_left = -32.0
 offset_top = -84.0
 offset_right = 32.0
@@ -219,10 +235,12 @@ theme_override_styles/disabled = SubResource("StyleBoxEmpty_mk6wq")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_fdf0w")
 text = "▼"
 
-[node name="coal" type="Sprite2D" parent="OrderMenu/Type"]
-position = Vector2(7, 20.5)
-scale = Vector2(0.015, 0.0141667)
-texture = ExtResource("4_vi7sx")
+[node name="icon" type="AnimatedSprite2D" parent="OrderMenu/Type"]
+position = Vector2(7, 19)
+scale = Vector2(0.40625, 0.390625)
+sprite_frames = SubResource("SpriteFrames_p5mv6")
+animation = &"coal"
+autoplay = "coal"
 
 [node name="OrderButton" type="Button" parent="OrderMenu"]
 layout_mode = 1
@@ -239,192 +257,8 @@ theme_override_font_sizes/font_size = 1000
 text = "Order 100$"
 metadata/_edit_use_anchors_ = true
 
-[node name="OrderMenu2" type="ColorRect" parent="."]
-visible = false
-offset_left = -32.0
-offset_top = -84.0
-offset_right = 32.0
-offset_bottom = -20.0
-
-[node name="Amount" type="Control" parent="OrderMenu2"]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = 11.0
-offset_top = 4.0
-offset_right = 24.0
-offset_bottom = 44.0
-grow_horizontal = 2
-
-[node name="more" type="Button" parent="OrderMenu2/Amount"]
-layout_mode = 0
-offset_left = 1.0
-offset_top = 1.0
-offset_right = 221.0
-offset_bottom = 214.0
-scale = Vector2(0.05, 0.05)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 150
-theme_override_styles/normal = SubResource("StyleBoxEmpty_26ko1")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_qtjlw")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_tq24s")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_8txcq")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_65vsi")
-toggle_mode = true
-action_mode = 0
-button_mask = 3
-text = "▲"
-
-[node name="less" type="Button" parent="OrderMenu2/Amount"]
-layout_mode = 0
-offset_left = 1.0
-offset_top = 26.0
-offset_right = 221.0
-offset_bottom = 239.0
-scale = Vector2(0.05, 0.05)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 150
-theme_override_styles/normal = SubResource("StyleBoxEmpty_mffln")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_6tn64")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_4fdrm")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_8nv3i")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_t3rwy")
-action_mode = 0
-button_mask = 3
-text = "▼"
-
-[node name="Count" type="Label" parent="OrderMenu2/Amount"]
-layout_mode = 0
-offset_left = -4.0
-offset_top = 10.0
-offset_right = 425.0
-offset_bottom = 355.0
-scale = Vector2(0.05, 0.05)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 250
-text = "0
-"
-horizontal_alignment = 1
-
-[node name="Type" type="Control" parent="OrderMenu2"]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -24.0
-offset_top = 5.0
-offset_right = -11.0
-offset_bottom = 45.0
-grow_horizontal = 2
-
-[node name="more" type="Button" parent="OrderMenu2/Type"]
-layout_mode = 0
-offset_left = 1.0
-offset_top = 1.0
-offset_right = 221.0
-offset_bottom = 214.0
-scale = Vector2(0.05, 0.05)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 150
-theme_override_styles/normal = SubResource("StyleBoxEmpty_q8ie5")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_mayqp")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_ym08l")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_7jpu3")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_ou68j")
-text = "▲"
-
-[node name="less" type="Button" parent="OrderMenu2/Type"]
-layout_mode = 0
-offset_left = 1.0
-offset_top = 26.0
-offset_right = 221.0
-offset_bottom = 239.0
-scale = Vector2(0.05, 0.05)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 150
-theme_override_styles/normal = SubResource("StyleBoxEmpty_c3vwr")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_4jej2")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_xgavs")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_mk6wq")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_fdf0w")
-text = "▼"
-
-[node name="coal" type="Sprite2D" parent="OrderMenu2/Type"]
-position = Vector2(7, 20.5)
-scale = Vector2(0.015, 0.0141667)
-texture = ExtResource("4_vi7sx")
-
-[node name="OrderButton" type="Button" parent="OrderMenu2"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.65625
-anchor_top = 0.765625
-anchor_right = 0.980469
-anchor_bottom = 0.923437
-offset_right = 394.25
-offset_bottom = 191.9
-scale = Vector2(0.05, 0.05)
-theme_override_fonts/font = ExtResource("5_m4os1")
-theme_override_font_sizes/font_size = 140
-text = "Order"
-metadata/_edit_use_anchors_ = true
-
-[node name="CoinSprite" type="TextureRect" parent="OrderMenu2"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.46875
-anchor_top = 0.765625
-anchor_right = 0.640625
-anchor_bottom = 0.9375
-texture = ExtResource("6_e7bkb")
-expand_mode = 1
-stretch_mode = 4
-metadata/_edit_use_anchors_ = true
-
-[node name="Cost" type="Label" parent="OrderMenu2"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.03125
-anchor_top = 0.671875
-anchor_right = 3.27734
-anchor_bottom = 3.04609
-offset_right = 356.25
-offset_bottom = 265.05
-scale = Vector2(0.05, 0.05)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("5_m4os1")
-theme_override_font_sizes/font_size = 300
-text = "0"
-horizontal_alignment = 2
-vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
-
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
 [connection signal="pressed" from="OrderMenu/Amount/more" to="." method="_on_more_pressed"]
 [connection signal="pressed" from="OrderMenu/Amount/less" to="." method="_on_less_pressed"]
 [connection signal="pressed" from="OrderMenu/OrderButton" to="." method="_on_order_button_pressed"]
-[connection signal="pressed" from="OrderMenu2/Amount/more" to="." method="_on_more_pressed"]
-[connection signal="pressed" from="OrderMenu2/Amount/less" to="." method="_on_less_pressed"]
-[connection signal="pressed" from="OrderMenu2/OrderButton" to="." method="_on_order_button_pressed"]
