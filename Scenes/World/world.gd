@@ -4,7 +4,7 @@ var hour = 0
 var day = 0
 var paused = false
 @onready var pauseMenu = $Camera2D/Pause_Menu
-
+var currentNPCs
 var npc = preload("res://Scenes/npc/npc.tscn")
 
 @onready var paths = {
@@ -26,6 +26,8 @@ func instantiate_npc():
 			new_npc.global_position = i.global_position
 			new_npc.path = i
 			$Npcs.add_child(new_npc)
+			currentNPCs += 1
+			print(currentNPCs)
 			return
 
 func _process(delta):

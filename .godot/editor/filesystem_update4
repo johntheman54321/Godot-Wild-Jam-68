@@ -1,7 +1,6 @@
 res://Scenes/PickableItem/pickable_item.tscn
-res://Scenes/player/player.tscn
-res://Scenes/player/player.gd
+res://Scenes/World/world.gd
 res://Scenes/World/world.tscn
-res://Scenes/PickableItem/pickable_item.gd
+res://Scenes/player/player.tscn
 res://Scenes/npc/npc.tscn
 res://Scenes/ShopKeeper/shop_keeper.tscn
