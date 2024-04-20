@@ -60,3 +60,7 @@ func PauseMenu():
 
 func _on_button_pressed():
 	$Menu/CanvasLayer.visible = !$Menu/CanvasLayer.visible
+
+
+func _on_menu_exit_pressed():
+	$Menu/CanvasLayer.visible = !$Menu/CanvasLayer.visible
