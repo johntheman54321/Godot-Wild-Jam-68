@@ -1,10 +1,4 @@
-res://Scenes/ShopKeeper/shop_keeper.tscn
-res://Scenes/World/world.tscn
-res://Scenes/World/world.gd
-res://Scenes/ShopKeeper/shop_keeper.gd
-res://Scenes/Menu/Menu.gd
-res://Scenes/item timer/item_timer.tscn
-res://ItemTimer.gd
-res://Scenes/world/world.tscn
-res://Scenes/World/Order Timers.gd
 res://Scenes/item_timer/item_timer.tscn
+res://ItemTimer.gd
+res://Scenes/World/world.tscn
+res://Scenes/PickableItem/pickable_item.tscn

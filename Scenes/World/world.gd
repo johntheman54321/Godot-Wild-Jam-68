@@ -29,7 +29,6 @@ func instantiate_npc():
 				newNpc.path = i
 				$Npcs.add_child(newNpc)
 				currentNPCs += 1
-				print(currentNPCs)
 			return
 
 func _process(delta):
@@ -55,7 +54,6 @@ func PauseMenu():
 		Engine.time_scale = 0
 		
 	paused = !paused
-	print(paused)
 
 func _on_button_pressed():
 	$Menu/CanvasLayer.visible = !$Menu/CanvasLayer.visible

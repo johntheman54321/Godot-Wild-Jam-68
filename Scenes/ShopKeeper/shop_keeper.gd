@@ -5,7 +5,7 @@ var quantity = 1
 const quantityCap = 50
 var cost = 0
 var currentItemId = 0
-signal newOrder(Quantity, Type)
+signal newOrder(quantity, type)
 
 const itemMap = ["coal","iron","copper","tin"] 
 
@@ -85,11 +85,9 @@ func _on_more_type_pressed():
 		currentItemId = 0
 	else:
 		currentItemId += 1
-	print(currentItemId)
 
 func _on_less_type_pressed():
 	if currentItemId == 0:
 		currentItemId = 3
 	else:
 		currentItemId -= 1
-	print(currentItemId)

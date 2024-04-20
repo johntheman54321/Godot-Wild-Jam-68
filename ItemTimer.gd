@@ -3,11 +3,15 @@ extends Control
 @export var icons:Array[Texture2D]
 const itemMap = ["coal","iron","copper","tin"]
 
-# Called when the node enters the scene tree for the first time.
+@export var quantity:int
+@export var type:String
+
 func _ready():
-	pass # Replace with function body.
+	$TextureRect.texture = icons[itemMap.find(type)]
+	
+	# Change this to a better function later
+	$Timer.wait_time = quantity
+	$Timer.start()
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	$ProgressBar.value = (($Timer.wait_time - $Timer.time_left) * 100)/$Timer.wait_time
