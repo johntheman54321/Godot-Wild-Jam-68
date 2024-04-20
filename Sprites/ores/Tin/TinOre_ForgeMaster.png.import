@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4nnpf8dhhth5"
-path="res://.godot/imported/iron_ingot.png-4e6321f0b68b1be6aed40ce12a13d083.ctex"
+uid="uid://835qicm7l0py"
+path="res://.godot/imported/TinOre_ForgeMaster.png-f11b7d5f2a0d29696d19b11e0930f4e3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/ores/iron_ingot.png"
-dest_files=["res://.godot/imported/iron_ingot.png-4e6321f0b68b1be6aed40ce12a13d083.ctex"]
+source_file="res://Sprites/ores/Tin/TinOre_ForgeMaster.png"
+dest_files=["res://.godot/imported/TinOre_ForgeMaster.png-f11b7d5f2a0d29696d19b11e0930f4e3.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cipepka4ijqme"
-path="res://.godot/imported/coal.png-ba5534a214ab75dfe545f8075f5fbe38.ctex"
+uid="uid://b4nnpf8dhhth5"
+path="res://.godot/imported/ironIngot_ForgeMaster.png-b9b622f94316a4ea9f584c3cad89824f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/ores/coal.png"
-dest_files=["res://.godot/imported/coal.png-ba5534a214ab75dfe545f8075f5fbe38.ctex"]
+source_file="res://Sprites/ores/Iron/ironIngot_ForgeMaster.png"
+dest_files=["res://.godot/imported/ironIngot_ForgeMaster.png-b9b622f94316a4ea9f584c3cad89824f.ctex"]
 
 [params]
 

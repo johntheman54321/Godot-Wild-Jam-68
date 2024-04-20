@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://835qicm7l0py"
-path="res://.godot/imported/TinOre_ForgeMaster.png-bdcddffb265288663c06bc2a68f1567b.ctex"
+uid="uid://8ioqokd287gl"
+path="res://.godot/imported/CopperOre_ForgeMaster.png-6009dff4d2ce0f48e682ada40ed0ff0f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/ores/TinOre_ForgeMaster.png"
-dest_files=["res://.godot/imported/TinOre_ForgeMaster.png-bdcddffb265288663c06bc2a68f1567b.ctex"]
+source_file="res://Sprites/ores/Copper/CopperOre_ForgeMaster.png"
+dest_files=["res://.godot/imported/CopperOre_ForgeMaster.png-6009dff4d2ce0f48e682ada40ed0ff0f.ctex"]
 
 [params]
 

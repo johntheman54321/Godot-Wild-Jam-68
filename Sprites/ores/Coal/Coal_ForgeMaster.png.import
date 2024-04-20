@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0q0x82imw8u2"
-path="res://.godot/imported/IronOre_ForgeMaster.png-842eed804f8a3d1ecb00bd4ea4a59104.ctex"
+uid="uid://j41g3dw5yt71"
+path="res://.godot/imported/Coal_ForgeMaster.png-5cb035099dc92cde6589b98e25a8629a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/ores/IronOre_ForgeMaster.png"
-dest_files=["res://.godot/imported/IronOre_ForgeMaster.png-842eed804f8a3d1ecb00bd4ea4a59104.ctex"]
+source_file="res://Sprites/ores/Coal/Coal_ForgeMaster.png"
+dest_files=["res://.godot/imported/Coal_ForgeMaster.png-5cb035099dc92cde6589b98e25a8629a.ctex"]
 
 [params]
 

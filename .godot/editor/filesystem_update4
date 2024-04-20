@@ -1,4 +1,6 @@
-res://Scenes/item_timer/item_timer.tscn
-res://ItemTimer.gd
-res://Scenes/World/world.tscn
 res://Scenes/PickableItem/pickable_item.tscn
+res://ItemTimer.gd
+res://Scenes/PickableItem/pickable_item.gd
+res://Scenes/World/world.tscn
+res://Scenes/item_timer/item_timer.tscn
+res://Scenes/World/Order Timers.gd

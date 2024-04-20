@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://eyfeu1exxp2j"
-path="res://.godot/imported/coal_interactable.png-5063bc0e6ba80586e9f4b4656048a9cf.ctex"
+uid="uid://cqu2cmmmie6a6"
+path="res://.godot/imported/CopperIngotPickup_ForgeMaster.png-b5d7ddbf7d99cd259ba16af73c7baaf5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/ores/coal_interactable.png"
-dest_files=["res://.godot/imported/coal_interactable.png-5063bc0e6ba80586e9f4b4656048a9cf.ctex"]
+source_file="res://Sprites/ores/Copper/CopperIngotPickup_ForgeMaster.png"
+dest_files=["res://.godot/imported/CopperIngotPickup_ForgeMaster.png-b5d7ddbf7d99cd259ba16af73c7baaf5.ctex"]
 
 [params]
 

@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://dqjg6n8ef0ovx"]
 
 [ext_resource type="Script" path="res://ItemTimer.gd" id="1_hwev4"]
-[ext_resource type="Texture2D" uid="uid://j41g3dw5yt71" path="res://Sprites/ores/Coal_ForgeMaster.png" id="2_xhu3h"]
-[ext_resource type="Texture2D" uid="uid://d0q0x82imw8u2" path="res://Sprites/ores/IronOre_ForgeMaster.png" id="3_bjv0s"]
-[ext_resource type="Texture2D" uid="uid://8ioqokd287gl" path="res://Sprites/ores/CopperOre_ForgeMaster.png" id="4_u7r02"]
-[ext_resource type="Texture2D" uid="uid://835qicm7l0py" path="res://Sprites/ores/TinOre_ForgeMaster.png" id="5_242at"]
+[ext_resource type="Texture2D" uid="uid://j41g3dw5yt71" path="res://Sprites/ores/Coal/Coal_ForgeMaster.png" id="2_fa2vc"]
+[ext_resource type="Texture2D" uid="uid://d0q0x82imw8u2" path="res://Sprites/ores/Iron/IronOre_ForgeMaster.png" id="3_53ayu"]
+[ext_resource type="Texture2D" uid="uid://8ioqokd287gl" path="res://Sprites/ores/Copper/CopperOre_ForgeMaster.png" id="4_7l0wj"]
+[ext_resource type="Texture2D" uid="uid://835qicm7l0py" path="res://Sprites/ores/Tin/TinOre_ForgeMaster.png" id="5_t5aoj"]
 
 [node name="ItemTimer" type="Control"]
 custom_minimum_size = Vector2(176, 64)
@@ -13,7 +13,7 @@ anchors_preset = 0
 offset_right = 176.0
 offset_bottom = 64.0
 script = ExtResource("1_hwev4")
-icons = Array[Texture2D]([ExtResource("2_xhu3h"), ExtResource("3_bjv0s"), ExtResource("4_u7r02"), ExtResource("5_242at")])
+icons = Array[Texture2D]([ExtResource("2_fa2vc"), ExtResource("3_53ayu"), ExtResource("4_7l0wj"), ExtResource("5_t5aoj")])
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 4096.0
@@ -23,13 +23,27 @@ one_shot = true
 layout_mode = 0
 anchor_right = 0.363636
 anchor_bottom = 1.0
-texture = ExtResource("2_xhu3h")
+texture = ExtResource("2_fa2vc")
 metadata/_edit_use_anchors_ = true
 
-[node name="ProgressBar" type="ProgressBar" parent="."]
+[node name="Button" type="Button" parent="TextureRect"]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
+offset_left = 8.0
+offset_top = 16.0
+offset_right = 52.0
+offset_bottom = 52.0
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
 anchor_left = 0.363636
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_right = 11.2727
+anchor_bottom = 20.0
+scale = Vector2(0.05, 0.05)
+theme_override_font_sizes/font_size = 400
 value = 16.73
 metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="TextureRect/Button" to="." method="_on_button_pressed"]

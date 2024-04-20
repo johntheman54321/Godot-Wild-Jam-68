@@ -1,12 +1,12 @@
+Control
+Button
 TextureRect
 ReferenceRect
 VBoxContainer
-Control
 ProgressBar
 AnimatedSprite2D
 Timer
 Node2D
-Button
 ColorRect
 CanvasLayer
 Sprite2D
