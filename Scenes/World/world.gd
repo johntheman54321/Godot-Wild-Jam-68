@@ -5,7 +5,7 @@ var day = 0
 var paused = false
 @onready var pauseMenu = $Camera2D/Pause_Menu
 var currentNPCs : int
-@export var Npc_cap = 2
+@export var npcCap = 2
 var npc = preload("res://Scenes/npc/npc.tscn")
 
 @onready var paths = {
@@ -22,21 +22,21 @@ var npc = preload("res://Scenes/npc/npc.tscn")
 func instantiate_npc():
 	for i in paths:
 		if paths[i] == false:
-			if currentNPCs < Npc_cap:
+			if currentNPCs < npcCap:
 				paths[i] = true
-				var new_npc = npc.instantiate()
-				new_npc.global_position = i.global_position
-				new_npc.path = i
-				$Npcs.add_child(new_npc)
+				var newNpc = npc.instantiate()
+				newNpc.global_position = i.global_position
+				newNpc.path = i
+				$Npcs.add_child(newNpc)
 				currentNPCs += 1
 				print(currentNPCs)
 			return
 
 func _process(delta):
-	$CanvasLayer/Timer_UI.text = "Hour " + str(hour)
+	$CanvasLayer/StaticUI/Timer_UI.text = "Hour " + str(hour)
 	if Input.is_action_just_pressed("Pause"):
 		PauseMenu()
-	$CanvasLayer/Money/Label.text = str($Player.money)
+	$CanvasLayer/StaticUI/Money/Label.text = str($Player.money)
 
 func _on_timer_timeout():
 	hour += 1
@@ -57,10 +57,8 @@ func PauseMenu():
 	paused = !paused
 	print(paused)
 
-
 func _on_button_pressed():
 	$Menu/CanvasLayer.visible = !$Menu/CanvasLayer.visible
-
 
 func _on_menu_exit_pressed():
 	$Menu/CanvasLayer.visible = !$Menu/CanvasLayer.visible

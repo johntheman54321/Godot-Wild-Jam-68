@@ -7,7 +7,7 @@ var cost = 0
 var currentItemId = 0
 signal newOrder(Quantity, Type)
 
-var itemMap = ["coal","iron","copper","tin"] 
+const itemMap = ["coal","iron","copper","tin"] 
 
 const costTable = {
 	"coal" : 1,
@@ -80,15 +80,12 @@ func _on_order_button_pressed():
 	newOrder.emit(quantity, itemMap[currentItemId])
 	player.money -= cost
 
-
-
 func _on_more_type_pressed():
 	if currentItemId == 3:
 		currentItemId = 0
 	else:
 		currentItemId += 1
 	print(currentItemId)
-
 
 func _on_less_type_pressed():
 	if currentItemId == 0:
