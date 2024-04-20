@@ -4,7 +4,8 @@ var hour = 0
 var day = 0
 var paused = false
 @onready var pauseMenu = $Camera2D/Pause_Menu
-var currentNPCs
+var currentNPCs : int
+@export var Npc_cap = 2
 var npc = preload("res://Scenes/npc/npc.tscn")
 
 @onready var paths = {
@@ -21,13 +22,14 @@ var npc = preload("res://Scenes/npc/npc.tscn")
 func instantiate_npc():
 	for i in paths:
 		if paths[i] == false:
-			paths[i] = true
-			var new_npc = npc.instantiate()
-			new_npc.global_position = i.global_position
-			new_npc.path = i
-			$Npcs.add_child(new_npc)
-			currentNPCs += 1
-			print(currentNPCs)
+			if currentNPCs < Npc_cap:
+				paths[i] = true
+				var new_npc = npc.instantiate()
+				new_npc.global_position = i.global_position
+				new_npc.path = i
+				$Npcs.add_child(new_npc)
+				currentNPCs += 1
+				print(currentNPCs)
 			return
 
 func _process(delta):
@@ -54,3 +56,7 @@ func PauseMenu():
 		
 	paused = !paused
 	print(paused)
+
+
+func _on_button_pressed():
+	$Menu/CanvasLayer.visible = !$Menu/CanvasLayer.visible

@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713564501
+::res://::1713583393
 icon.svg::CompressedTexture2D::1346206398989664400::1712956287::1713564504::1::::<><>::
 README.md::TextFile::-1::1713564470::0::1::::<><>::
 ::res://Fonts/::1713141002
@@ -10,35 +10,38 @@ default_bus_layout.tres::AudioBusLayout::750229254839676878::1713147067::0::1:::
 Medieval Song Village Consort [No Copyright Music].mp3::AudioStreamMP3::3056342008308430016::1713147585::1713147586::1::::<><>::
 Royalty Free Medieval Music - _Celebration_ by Alexander Nakarada.mp3::AudioStreamMP3::3070292046757444759::1713147585::1713147586::1::::<><>::
 _Dungeons and Dragons_ - Royalty Free Music For Commercial Use - Epic-Celtic Fantasy.mp3::AudioStreamMP3::4354378753990489966::1713147585::1713147586::1::::<><>::
-::res://Scenes/::1713489403
+::res://Scenes/::1713585048
 ::res://Scenes/loading_screen/::1713111627
 loading_screen.gd::GDScript::-1::1713066085::0::1::::<>Node2D<>::
 loading_screen.tscn::PackedScene::1177515191130613376::1713111627::0::1::::<><>::res://Scenes/loading_screen/loading_screen.gd
 ::res://Scenes/machines/::1713139176
 ::res://Scenes/machines/furnace/::1713489317
 furnace.gd::GDScript::-1::1713398177::0::1::::<>StaticBody2D<>::
-furnace.tscn::PackedScene::8211406786486958727::1713489317::0::1::::<><>::uid://bwyh6tdfh4n35::::res://Sprites/Furnace.png<>res://Scenes/machines/furnace/furnace.gd<>uid://b3tdwh3h4808i::::res://Fonts/Platypi-VariableFont_wght.otf<>uid://bj75d51xy58m3::::res://SFX/fireplace-with-crackling-sounds-2-min-rk-178392.mp3
+furnace.tscn::PackedScene::8211406786486958727::1713489317::0::1::::<><>::uid://bwyh6tdfh4n35
+::res://Scenes/Menu/::1713586639
+menu.tscn::PackedScene::3722624458226209573::1713586639::0::1::::<><>::res://Scenes/Menu/menu.gd<>uid://b3tdwh3h4808i::::res://Fonts/Platypi-VariableFont_wght.otf<>uid://j41g3dw5yt71::::res://Sprites/ores/Coal_ForgeMaster.png
+menu.gd::GDScript::-1::1713585250::0::1::::<>Control<>::
 ::res://Scenes/Music Scene/::1713224045
 Music.gd::GDScript::-1::1713213567::0::1::::<>Node2D<>::
-Music.tscn::PackedScene::104437627986014443::1713224045::0::1::::<><>::uid://bjsrrhlf7h4jc::::res://Music/Medieval Song Village Consort [No Copyright Music].mp3<>res://Scenes/Music Scene/Music.gd<>uid://bj0ji5ho0t4sx::::res://Music/Royalty Free Medieval Music - _Celebration_ by Alexander Nakarada.mp3<>uid://b3bj8ncolr78u::::res://Music/_Dungeons and Dragons_ - Royalty Free Music For Commercial Use - Epic-Celtic Fantasy.mp3
-::res://Scenes/npc/::1713489317
+Music.tscn::PackedScene::104437627986014443::1713224045::0::1::::<><>::uid://bjsrrhlf7h4jc
+::res://Scenes/npc/::1713585108
 npc.gd::GDScript::-1::1713398177::0::1::::<>Node2D<>::
-npc.tscn::PackedScene::4321097782810892438::1713489317::0::1::::<><>::res://Scenes/npc/npc.gd<>uid://bu027b6xl7ilq::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest2/v1/priest2_v1_1.png<>uid://ciiuxoelu61j::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest2/v1/priest2_v1_2.png<>uid://ckgqu8b18f7fo::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest3/v1/priest3_v1_1.png<>uid://ddi72d1w2awvl::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest2/v1/priest2_v1_3.png<>uid://bl2ygijgey5sx::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest2/v1/priest2_v1_4.png<>uid://b62xohgj26ecs::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest3/v1/priest3_v1_2.png<>uid://c6opnrjy1ibg2::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest3/v1/priest3_v1_3.png<>uid://c0qfln4pfkhix::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest3/v1/priest3_v1_4.png
+npc.tscn::PackedScene::4321097782810892438::1713585108::0::1::::<><>::res://Scenes/npc/npc.gd<>uid://bu027b6xl7ilq::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest2/v1/priest2_v1_1.png<>uid://ciiuxoelu61j::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest2/v1/priest2_v1_2.png<>uid://ckgqu8b18f7fo::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest3/v1/priest3_v1_1.png<>uid://ddi72d1w2awvl::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest2/v1/priest2_v1_3.png<>uid://bl2ygijgey5sx::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest2/v1/priest2_v1_4.png<>uid://b62xohgj26ecs::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest3/v1/priest3_v1_2.png<>uid://c6opnrjy1ibg2::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest3/v1/priest3_v1_3.png<>uid://c0qfln4pfkhix::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest3/v1/priest3_v1_4.png
 ::res://Scenes/Pause Menu/::1713489317
 pause_menu.gd::GDScript::-1::1713486280::0::1::::<>Control<>::
-pause_menu.tscn::PackedScene::415568209989444780::1713489317::0::1::::<><>::res://Scenes/Pause Menu/pause_menu.gd<>uid://b2om50ho0qbh8::::res://Fonts/BLKCHCRY.otf<>uid://d48hqrcmb3v3::::res://Sprites/Buttons/tres/Normal Brown Button.tres<>uid://cw8yhi13l41fh::::res://Sprites/Buttons/tres/Hover Brown Button.tres
-::res://Scenes/PickableItem/::1713564473
+pause_menu.tscn::PackedScene::415568209989444780::1713489317::0::1::::<><>::res://Scenes/Pause Menu/pause_menu.gd<>uid://b2om50ho0qbh8
+::res://Scenes/PickableItem/::1713585108
 pickable_item.gd::GDScript::-1::1713564473::0::1::::<>Node2D<>::
-pickable_item.tscn::PackedScene::1615446874598308740::1713564473::0::1::::<><>::res://Scenes/PickableItem/pickable_item.gd<>uid://cipepka4ijqme::::res://Sprites/ores/coal.png<>uid://eyfeu1exxp2j::::res://Sprites/ores/coal_interactable.png
-::res://Scenes/player/::1713564473
+pickable_item.tscn::PackedScene::1615446874598308740::1713585108::0::1::::<><>::res://Scenes/PickableItem/pickable_item.gd<>uid://cipepka4ijqme::::res://Sprites/ores/coal.png<>uid://eyfeu1exxp2j::::res://Sprites/ores/coal_interactable.png
+::res://Scenes/player/::1713585108
 player.gd::GDScript::-1::1713564473::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::9203744487414567948::1713560045::0::1::::<><>::res://Scenes/player/player.gd<>uid://dwcsapqfi21ys::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_1.png<>uid://3v10wxhov6wu::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_2.png<>uid://h0yxqmq7y1og::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_3.png<>uid://vttbtaqw7hg4::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_4.png
-::res://Scenes/ShopKeeper/::1713564473
-shop_keeper.gd::GDScript::-1::1713488934::0::1::::<>StaticBody2D<>::
-shop_keeper.tscn::PackedScene::6581345068805266900::1713564473::0::1::::<><>::res://Scenes/ShopKeeper/shop_keeper.gd<>uid://cbrs3nyv6p0n8::::res://Sprites/Npcs/Shopkeeper/Shopkeeper- outline.png<>uid://1vpakk2ul2y8::::res://Sprites/Npcs/Shopkeeper/Shopkeeeper-no outline.png<>uid://cipepka4ijqme::::res://Sprites/ores/coal.png<>uid://b3tdwh3h4808i::::res://Fonts/Platypi-VariableFont_wght.otf
-::res://Scenes/World/::1713564473
-world.gd::GDScript::-1::1713485706::0::1::::<>Node2D<>::
-world.tscn::PackedScene::8827682834296294187::1713564473::0::1::::<><>::res://Scenes/World/world.gd<>uid://ceodsknvecwpo::::res://Sprites/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png<>uid://d4emleblx5wfk::::res://Scenes/player/player.tscn<>uid://c01b16iohq8ey::::res://Scenes/ShopKeeper/shop_keeper.tscn<>uid://q1nrdwh5h3ts::::res://Scenes/loading_screen/loading_screen.tscn<>uid://b2om50ho0qbh8::::res://Fonts/BLKCHCRY.otf<>uid://f6kl27emvlii::::res://Scenes/Pause Menu/pause_menu.tscn<>uid://do8ww1urgvtat::::res://Scenes/machines/furnace/furnace.tscn<>uid://b3tdwh3h4808i::::res://Fonts/Platypi-VariableFont_wght.otf<>uid://cqoflndgdhuvn::::res://Sprites/Coin.png
+player.tscn::PackedScene::9203744487414567948::1713585108::0::1::::<><>::res://Scenes/player/player.gd<>uid://dwcsapqfi21ys::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_1.png<>uid://3v10wxhov6wu::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_2.png<>uid://h0yxqmq7y1og::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_3.png<>uid://vttbtaqw7hg4::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_4.png
+::res://Scenes/ShopKeeper/::1713586639
+shop_keeper.gd::GDScript::-1::1713586639::0::1::::<>StaticBody2D<>::
+shop_keeper.tscn::PackedScene::6581345068805266900::1713586639::0::1::::<><>::res://Scenes/ShopKeeper/shop_keeper.gd<>uid://cbrs3nyv6p0n8::::res://Sprites/Npcs/Shopkeeper/Shopkeeper- outline.png<>uid://1vpakk2ul2y8::::res://Sprites/Npcs/Shopkeeper/Shopkeeeper-no outline.png<>uid://j41g3dw5yt71::::res://Sprites/ores/Coal_ForgeMaster.png<>uid://8ioqokd287gl::::res://Sprites/ores/CopperOre_ForgeMaster.png<>uid://b3tdwh3h4808i::::res://Fonts/Platypi-VariableFont_wght.otf<>uid://835qicm7l0py::::res://Sprites/ores/TinOre_ForgeMaster.png
+::res://Scenes/World/::1713585108
+world.gd::GDScript::-1::1713583760::0::1::::<>Node2D<>::
+world.tscn::PackedScene::8827682834296294187::1713585108::0::1::::<><>::res://Scenes/World/world.gd<>uid://ceodsknvecwpo::::res://Sprites/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png<>uid://d4emleblx5wfk::::res://Scenes/player/player.tscn<>uid://c01b16iohq8ey::::res://Scenes/ShopKeeper/shop_keeper.tscn<>uid://q1nrdwh5h3ts::::res://Scenes/loading_screen/loading_screen.tscn<>uid://b2om50ho0qbh8::::res://Fonts/BLKCHCRY.otf<>uid://f6kl27emvlii::::res://Scenes/Pause Menu/pause_menu.tscn<>uid://do8ww1urgvtat::::res://Scenes/machines/furnace/furnace.tscn<>uid://b3tdwh3h4808i::::res://Fonts/Platypi-VariableFont_wght.otf<>uid://cqoflndgdhuvn::::res://Sprites/Coin.png
 ::res://SFX/::1713389995
 fireplace-with-crackling-sounds-2-min-rk-178392.mp3::AudioStreamMP3::3086008848673737608::1713222998::1713389995::1::::<><>::
 ::res://Sprites/::1713398177
@@ -274,13 +277,17 @@ torch_4.png::CompressedTexture2D::5731630760773637191::1713029088::1713029088::1
 brown button.png::CompressedTexture2D::1839461474052589718::1713109971::1713110009::1::::<><>::
 hover brown.png::CompressedTexture2D::1158373684076338258::1713109971::1713110009::1::::<><>::
 ::res://Sprites/Buttons/tres/::1713110196
-Hover Brown Button.tres::StyleBoxTexture::6386590563330394161::1713110196::0::1::::<><>::uid://qreiluxvmiis::::res://Sprites/Buttons/Sprites/hover brown.png
-Normal Brown Button.tres::StyleBoxTexture::272450513842714910::1713110096::0::1::::<><>::uid://1hbwq7uh61f3::::res://Sprites/Buttons/Sprites/brown button.png
+Hover Brown Button.tres::StyleBoxTexture::6386590563330394161::1713110196::0::1::::<><>::uid://qreiluxvmiis
+Normal Brown Button.tres::StyleBoxTexture::272450513842714910::1713110096::0::1::::<><>::uid://1hbwq7uh61f3
 ::res://Sprites/Npcs/::1713383541
 ::res://Sprites/Npcs/Shopkeeper/::1713383551
 Shopkeeeper-no outline.png::CompressedTexture2D::1869173164251087413::1713383537::1713383542::1::::<><>::
 Shopkeeper- outline.png::CompressedTexture2D::4879268261817431239::1713383549::1713383551::1::::<><>::
-::res://Sprites/ores/::1713564473
+::res://Sprites/ores/::1713586839
 coal.png::CompressedTexture2D::5365587964243189188::1713564473::1713564473::1::::<><>::
+Coal_ForgeMaster.png::CompressedTexture2D::693157380514235462::1713586036::1713586036::1::::<><>::
 coal_interactable.png::CompressedTexture2D::330612259634333443::1713564473::1713564473::1::::<><>::
+CopperOre_ForgeMaster.png::CompressedTexture2D::2333626223637423471::1713586036::1713586036::1::::<><>::
+IronOre_ForgeMaster.png::CompressedTexture2D::8948573959534740343::1713586839::1713586840::1::::<><>::
 iron_ingot.png::CompressedTexture2D::4449550481554609184::1713564473::1713564473::1::::<><>::
+TinOre_ForgeMaster.png::CompressedTexture2D::2375884923519074258::1713586230::1713586231::1::::<><>::

@@ -1,10 +1,13 @@
-[gd_scene load_steps=30 format=3 uid="uid://c01b16iohq8ey"]
+[gd_scene load_steps=33 format=3 uid="uid://c01b16iohq8ey"]
 
 [ext_resource type="Script" path="res://Scenes/ShopKeeper/shop_keeper.gd" id="1_7aent"]
 [ext_resource type="Texture2D" uid="uid://cbrs3nyv6p0n8" path="res://Sprites/Npcs/Shopkeeper/Shopkeeper- outline.png" id="1_hxb4g"]
 [ext_resource type="Texture2D" uid="uid://1vpakk2ul2y8" path="res://Sprites/Npcs/Shopkeeper/Shopkeeeper-no outline.png" id="2_5k4jy"]
-[ext_resource type="Texture2D" uid="uid://cipepka4ijqme" path="res://Sprites/ores/coal.png" id="4_vi7sx"]
+[ext_resource type="Texture2D" uid="uid://j41g3dw5yt71" path="res://Sprites/ores/Coal_ForgeMaster.png" id="4_5y4in"]
+[ext_resource type="Texture2D" uid="uid://8ioqokd287gl" path="res://Sprites/ores/CopperOre_ForgeMaster.png" id="5_cmwj2"]
 [ext_resource type="FontFile" uid="uid://b3tdwh3h4808i" path="res://Fonts/Platypi-VariableFont_wght.otf" id="5_m4os1"]
+[ext_resource type="Texture2D" uid="uid://835qicm7l0py" path="res://Sprites/ores/TinOre_ForgeMaster.png" id="6_fhs6q"]
+[ext_resource type="Texture2D" uid="uid://d0q0x82imw8u2" path="res://Sprites/ores/IronOre_ForgeMaster.png" id="6_owbvo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8ukrk"]
 size = Vector2(20, 26)
@@ -75,19 +78,39 @@ size = Vector2(32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_vi7sx")
+"texture": ExtResource("4_5y4in")
 }],
 "loop": true,
 "name": &"coal",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_cmwj2")
+}],
+"loop": true,
+"name": &"cooper_ore",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_owbvo")
+}],
 "loop": true,
 "name": &"iron_ore",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_fhs6q")
+}],
+"loop": true,
+"name": &"tin_ore",
 "speed": 5.0
 }]
 
 [node name="Shop Keeper" type="StaticBody2D"]
+scale = Vector2(3, 3)
 script = ExtResource("1_7aent")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -105,7 +128,6 @@ position = Vector2(0, 16)
 shape = SubResource("RectangleShape2D_insmt")
 
 [node name="OrderMenu" type="ColorRect" parent="."]
-visible = false
 offset_left = -32.0
 offset_top = -84.0
 offset_right = 32.0
@@ -239,7 +261,7 @@ text = "▼"
 position = Vector2(7, 19)
 scale = Vector2(0.40625, 0.390625)
 sprite_frames = SubResource("SpriteFrames_p5mv6")
-animation = &"coal"
+animation = &"iron_ore"
 autoplay = "coal"
 
 [node name="OrderButton" type="Button" parent="OrderMenu"]
@@ -261,4 +283,6 @@ metadata/_edit_use_anchors_ = true
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
 [connection signal="pressed" from="OrderMenu/Amount/more" to="." method="_on_more_pressed"]
 [connection signal="pressed" from="OrderMenu/Amount/less" to="." method="_on_less_pressed"]
+[connection signal="pressed" from="OrderMenu/Type/more" to="." method="_on_more_type_pressed"]
+[connection signal="pressed" from="OrderMenu/Type/less" to="." method="_on_less_type_pressed"]
 [connection signal="pressed" from="OrderMenu/OrderButton" to="." method="_on_order_button_pressed"]

@@ -5,13 +5,9 @@ var quantity = 1
 const quantityCap = 50
 var cost = 0
 var currentItemId = 0
+signal newOrder(Quantity, Type)
 
-var itemMap = [
-	"coal",
-	"iron",
-	"copper",
-	"tin"
-] 
+var itemMap = ["coal","iron","copper","tin"] 
 
 const costTable = {
 	"coal" : 1,
@@ -31,6 +27,19 @@ func _process(delta):
 	else: 
 		$OrderMenu/OrderButton.disabled = false
 	
+	if currentItemId == 0:
+		$OrderMenu/Type/icon.play("coal")
+		$OrderMenu.tooltip_text = "coal"
+	if currentItemId == 1:
+		$OrderMenu/Type/icon.play("iron_ore")
+		$OrderMenu.tooltip_text = "iron_ore"
+	if currentItemId == 2:
+		$OrderMenu/Type/icon.play("cooper_ore")
+		$OrderMenu.tooltip_text = "cooper_ore"
+	if currentItemId == 3:
+		$OrderMenu/Type/icon.play("tin_ore")
+		$OrderMenu.tooltip_text = "tin_ore"
+	
 	calculateCost()
 	
 func _on_area_2d_body_entered(body):
@@ -42,6 +51,7 @@ func _on_area_2d_body_exited(body):
 	$AnimatedSprite2D.play("Non-Interactable")
 	$OrderMenu.hide()
 	quantity = 1
+	currentItemId = 0
 
 #Quantity
 func _on_more_pressed():
@@ -67,5 +77,22 @@ func _on_less_pressed():
 			quantity = 50
 
 func _on_order_button_pressed():
+	newOrder.emit(quantity, itemMap[currentItemId])
 	player.money -= cost
 
+
+
+func _on_more_type_pressed():
+	if currentItemId == 3:
+		currentItemId = 0
+	else:
+		currentItemId += 1
+	print(currentItemId)
+
+
+func _on_less_type_pressed():
+	if currentItemId == 0:
+		currentItemId = 3
+	else:
+		currentItemId -= 1
+	print(currentItemId)

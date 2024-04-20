@@ -1,6 +1,10 @@
 res://Scenes/PickableItem/pickable_item.tscn
-res://Scenes/World/world.gd
 res://Scenes/World/world.tscn
 res://Scenes/player/player.tscn
 res://Scenes/npc/npc.tscn
 res://Scenes/ShopKeeper/shop_keeper.tscn
+res://Scenes/World/world.gd
+res://Scenes/Menu/menu.tscn
+res://Scenes/ShopKeeper/shop_keeper.gd
+res://Scenes/Menu/menu.gd
+res://Scenes/Menu/Menu.gd
