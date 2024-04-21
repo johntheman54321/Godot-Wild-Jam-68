@@ -104,6 +104,7 @@ grow_vertical = 2
 scale = Vector2(0.3, 0.3)
 script = ExtResource("1_wclgn")
 pickupOffsetRange = 3
+spawnOffsetRange = 6
 
 [node name="InteractableRange" type="Area2D" parent="."]
 

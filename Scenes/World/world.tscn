@@ -613,5 +613,8 @@ offset_bottom = 639.0
 script = ExtResource("11_odsa4")
 metadata/_edit_group_ = true
 
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(-56, 96)
+
 [connection signal="newOrder" from="Shop keeper" to="CanvasLayer/Order Timers" method="_on_shop_keeper_new_order"]
 [connection signal="timeout" from="CanvasLayer/StaticUI/Timer_UI/Timer" to="." method="_on_timer_timeout"]

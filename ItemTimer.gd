@@ -4,7 +4,6 @@ extends Control
 const itemMap = ["coal","iron","copper","tin"]
 var pickableItem = preload("res://Scenes/PickableItem/pickable_item.tscn")
 @export var player : CharacterBody2D
-
 @export var quantity:int
 @export var type:String
 @onready var current_ore = itemMap.find(type)
@@ -25,7 +24,7 @@ func _on_button_pressed():
 		queue_free()
 	var newPickableItem = pickableItem.instantiate()
 	newPickableItem.currentItemId = current_ore
-	newPickableItem.global_position = Vector2(-200,100)
+	newPickableItem.global_position = player.global_position + Vector2(-40, -40)
 	newPickableItem.player = player
 	$"../../../".add_child(newPickableItem)
 	
