@@ -1,8 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://do8ww1urgvtat"]
+[gd_scene load_steps=10 format=3 uid="uid://do8ww1urgvtat"]
 
 [ext_resource type="Texture2D" uid="uid://bwyh6tdfh4n35" path="res://Sprites/Furnace.png" id="1_61pyl"]
 [ext_resource type="Script" path="res://Scenes/machines/furnace/furnace.gd" id="1_wqvqv"]
-[ext_resource type="FontFile" uid="uid://b3tdwh3h4808i" path="res://Fonts/Platypi-VariableFont_wght.otf" id="3_rfhdb"]
 [ext_resource type="AudioStream" uid="uid://bj75d51xy58m3" path="res://SFX/fireplace-with-crackling-sounds-2-min-rk-178392.mp3" id="3_w6vi5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7foo4"]
@@ -70,18 +69,22 @@ stream = ExtResource("3_w6vi5")
 volume_db = -7.0
 bus = &"SFX"
 
+[node name="ItemSlotA" type="Marker2D" parent="."]
+position = Vector2(-7, -6)
+
+[node name="ItemSlotB" type="Marker2D" parent="."]
+position = Vector2(7, -6)
+
+[node name="OutputSlot" type="Marker2D" parent="."]
+position = Vector2(0, -6)
+
 [node name="Tooltip" type="Label" parent="."]
 visible = false
-offset_left = -3.0
-offset_top = -28.0
-offset_right = 121.0
-offset_bottom = 251.0
-scale = Vector2(0.05, 0.05)
-theme_override_fonts/font = ExtResource("3_rfhdb")
-theme_override_font_sizes/font_size = 200
+offset_left = 11.0
+offset_top = -32.0
+offset_right = 20.0
+offset_bottom = -6.0
 text = "E"
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

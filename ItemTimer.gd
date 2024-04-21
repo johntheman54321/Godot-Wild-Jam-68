@@ -22,10 +22,10 @@ func _process(delta):
 func _on_button_pressed():
 	if $ProgressBar.value == 100:
 		queue_free()
-	var newPickableItem = pickableItem.instantiate()
-	newPickableItem.currentItemId = current_ore
-	newPickableItem.global_position = player.global_position + Vector2(-40, -40)
-	newPickableItem.player = player
-	newPickableItem.quantity = quantity
-	$"../../../".add_child(newPickableItem)
+	for i in range(0, quantity):
+		var newPickableItem = pickableItem.instantiate()
+		newPickableItem.currentItemId = current_ore
+		newPickableItem.global_position = player.global_position + Vector2(-40, -40)
+		newPickableItem.player = player
+		$"../../../".add_child(newPickableItem)
 	

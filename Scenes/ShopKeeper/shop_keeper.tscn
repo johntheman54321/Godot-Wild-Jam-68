@@ -128,7 +128,6 @@ position = Vector2(0, 16)
 shape = SubResource("RectangleShape2D_insmt")
 
 [node name="OrderMenu" type="ColorRect" parent="."]
-visible = false
 offset_left = -32.0
 offset_top = -84.0
 offset_right = 32.0

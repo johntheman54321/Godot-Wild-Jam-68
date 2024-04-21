@@ -1,3 +1,6 @@
+res://Scenes/machines/furnace
+res://Scenes/item_timer
+res://Scenes/player
 res://Scenes/PickableItem
 C:/Users/Paul/Documents/GitHub/Godot-Wild-Jam-68/Scenes/Menu
 res://Scenes/world/timers
@@ -9,6 +12,5 @@ res://Sprites
 res://Sprites/Buttons/tres
 res://Scenes/Pause Menu
 res://Scenes/loading_screen
-res://Scenes/player
 res://Scenes
 res://
