@@ -116,5 +116,15 @@ scale = Vector2(1.125, 1.125)
 sprite_frames = SubResource("SpriteFrames_cxonv")
 animation = &"tinOreInteractable"
 
+[node name="Quantity" type="Label" parent="."]
+layout_mode = 0
+offset_left = 6.66669
+offset_top = -23.333
+offset_right = 1192.67
+offset_bottom = 934.667
+scale = Vector2(0.02, 0.02)
+theme_override_font_sizes/font_size = 700
+text = "x50"
+
 [connection signal="body_entered" from="InteractableRange" to="." method="_on_interactable_range_body_entered"]
 [connection signal="body_exited" from="InteractableRange" to="." method="_on_interactable_range_body_exited"]

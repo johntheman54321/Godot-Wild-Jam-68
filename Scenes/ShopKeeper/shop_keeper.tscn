@@ -3,11 +3,11 @@
 [ext_resource type="Script" path="res://Scenes/ShopKeeper/shop_keeper.gd" id="1_7aent"]
 [ext_resource type="Texture2D" uid="uid://cbrs3nyv6p0n8" path="res://Sprites/Npcs/Shopkeeper/Shopkeeper- outline.png" id="1_hxb4g"]
 [ext_resource type="Texture2D" uid="uid://1vpakk2ul2y8" path="res://Sprites/Npcs/Shopkeeper/Shopkeeeper-no outline.png" id="2_5k4jy"]
-[ext_resource type="Texture2D" uid="uid://j41g3dw5yt71" path="res://Sprites/ores/Coal_ForgeMaster.png" id="4_5y4in"]
-[ext_resource type="Texture2D" uid="uid://8ioqokd287gl" path="res://Sprites/ores/CopperOre_ForgeMaster.png" id="5_cmwj2"]
+[ext_resource type="Texture2D" uid="uid://j41g3dw5yt71" path="res://Sprites/ores/Coal/Coal_ForgeMaster.png" id="4_5y4in"]
+[ext_resource type="Texture2D" uid="uid://8ioqokd287gl" path="res://Sprites/ores/Copper/CopperOre_ForgeMaster.png" id="5_cmwj2"]
 [ext_resource type="FontFile" uid="uid://b3tdwh3h4808i" path="res://Fonts/Platypi-VariableFont_wght.otf" id="5_m4os1"]
-[ext_resource type="Texture2D" uid="uid://835qicm7l0py" path="res://Sprites/ores/TinOre_ForgeMaster.png" id="6_fhs6q"]
-[ext_resource type="Texture2D" uid="uid://d0q0x82imw8u2" path="res://Sprites/ores/IronOre_ForgeMaster.png" id="6_owbvo"]
+[ext_resource type="Texture2D" uid="uid://835qicm7l0py" path="res://Sprites/ores/Tin/TinOre_ForgeMaster.png" id="6_fhs6q"]
+[ext_resource type="Texture2D" uid="uid://d0q0x82imw8u2" path="res://Sprites/ores/Iron/IronOre_ForgeMaster.png" id="6_owbvo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8ukrk"]
 size = Vector2(20, 26)
@@ -128,6 +128,7 @@ position = Vector2(0, 16)
 shape = SubResource("RectangleShape2D_insmt")
 
 [node name="OrderMenu" type="ColorRect" parent="."]
+visible = false
 offset_left = -32.0
 offset_top = -84.0
 offset_right = 32.0
@@ -269,13 +270,13 @@ layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.0625
 anchor_top = 0.671875
-anchor_right = 81.4023
-anchor_bottom = 24.2359
+anchor_right = 168.902
+anchor_bottom = 50.7984
 offset_right = 394.25
 offset_bottom = 191.9
-scale = Vector2(0.01, 0.01)
+scale = Vector2(0.005, 0.005)
 theme_override_fonts/font = ExtResource("5_m4os1")
-theme_override_font_sizes/font_size = 1000
+theme_override_font_sizes/font_size = 2000
 text = "Order 100$"
 metadata/_edit_use_anchors_ = true
 

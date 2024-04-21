@@ -26,5 +26,6 @@ func _on_button_pressed():
 	newPickableItem.currentItemId = current_ore
 	newPickableItem.global_position = player.global_position + Vector2(-40, -40)
 	newPickableItem.player = player
+	newPickableItem.quantity = quantity
 	$"../../../".add_child(newPickableItem)
 	

@@ -1,3 +1,4 @@
+Label
 Marker2D
 Node2D
 Control
@@ -11,7 +12,6 @@ Timer
 ColorRect
 CanvasLayer
 Sprite2D
-Label
 CollisionShape2D
 Area2D
 StaticBody2D
