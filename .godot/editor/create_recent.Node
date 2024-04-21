@@ -1,3 +1,7 @@
+TextureRect
+PanelContainer
+Panel
+GridContainer
 Label
 Marker2D
 AnimatedSprite2D
@@ -5,7 +9,6 @@ BoxContainer
 Node2D
 Control
 Button
-TextureRect
 ReferenceRect
 VBoxContainer
 ProgressBar
@@ -24,9 +27,6 @@ PathFollow2D
 Path2D
 CharacterBody2D
 AudioStreamPlayer2D
-Panel
 Container
 AudioStreamPlayer
 TileMap
-AnimationPlayer
-CanvasModulate

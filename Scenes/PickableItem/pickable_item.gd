@@ -25,8 +25,6 @@ func _process(delta):
 				player.get_child(2).add_child(self)
 	if Input.is_action_just_pressed("Drop") and isPickedUp:
 		isPickedUp = false
-		get_parent().remove_child(self)
-		player.get_parent().add_child(self)
 		global_position = player.global_position + pickedUpOffset * 2
 
 func _on_interactable_range_body_entered(body):

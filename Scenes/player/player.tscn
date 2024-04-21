@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://d4emleblx5wfk"]
+[gd_scene load_steps=9 format=3 uid="uid://d4emleblx5wfk"]
 
 [ext_resource type="Script" path="res://Scenes/player/player.gd" id="1_jitqk"]
 [ext_resource type="Texture2D" uid="uid://dwcsapqfi21ys" path="res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_1.png" id="2_cyh27"]
 [ext_resource type="Texture2D" uid="uid://3v10wxhov6wu" path="res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_2.png" id="3_obakd"]
 [ext_resource type="Texture2D" uid="uid://h0yxqmq7y1og" path="res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_3.png" id="4_qpdrd"]
 [ext_resource type="Texture2D" uid="uid://vttbtaqw7hg4" path="res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_4.png" id="5_pjn5f"]
+[ext_resource type="PackedScene" uid="uid://bkonaa2hur7uy" path="res://Scenes/Slot/slot.tscn" id="6_ics4b"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_355k3"]
 animations = [{
@@ -42,9 +43,39 @@ autoplay = "idle"
 position = Vector2(0, 3)
 shape = SubResource("RectangleShape2D_h58cj")
 
-[node name="BoxContainer" type="BoxContainer" parent="."]
-offset_left = -8.0
-offset_top = -24.0
-offset_right = 8.0
-offset_bottom = -8.0
-mouse_filter = 2
+[node name="Inventory" type="GridContainer" parent="."]
+offset_left = -17.5
+offset_top = -47.0
+offset_right = 17.5
+offset_bottom = -12.0
+columns = 3
+metadata/_edit_group_ = true
+
+[node name="Slot1" parent="Inventory" instance=ExtResource("6_ics4b")]
+layout_mode = 2
+
+[node name="Slot2" parent="Inventory" instance=ExtResource("6_ics4b")]
+layout_mode = 2
+
+[node name="Slot3" parent="Inventory" instance=ExtResource("6_ics4b")]
+layout_mode = 2
+
+[node name="Slot4" parent="Inventory" instance=ExtResource("6_ics4b")]
+layout_mode = 2
+
+[node name="Slot5" parent="Inventory" instance=ExtResource("6_ics4b")]
+layout_mode = 2
+
+[node name="Slot6" parent="Inventory" instance=ExtResource("6_ics4b")]
+layout_mode = 2
+
+[node name="Slot7" parent="Inventory" instance=ExtResource("6_ics4b")]
+layout_mode = 2
+
+[node name="Slot8" parent="Inventory" instance=ExtResource("6_ics4b")]
+layout_mode = 2
+
+[node name="Slot9" parent="Inventory" instance=ExtResource("6_ics4b")]
+layout_mode = 2
+
+[editable path="Inventory/Slot1"]

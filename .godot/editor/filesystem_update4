@@ -1,10 +1,11 @@
+res://Scenes/World/world.tscn
 res://ItemTimer.gd
 res://Scenes/item_timer/item_timer.tscn
 res://Scenes/PickableItem/pickable_item.tscn
 res://Scenes/ShopKeeper/shop_keeper.tscn
-res://Scenes/World/world.tscn
-res://Scenes/PickableItem/pickable_item.gd
 res://Scenes/player/player.tscn
+res://Scenes/PickableItem/pickable_item.gd
+res://Script/ItemTimer.gd
+res://Scenes/Slot/slot.tscn
+res://Scenes/Slot/slot.gd
 res://Scenes/player/player.gd
-res://Scenes/machines/furnace/furnace.tscn
-res://Scenes/machines/furnace/furnace.gd
