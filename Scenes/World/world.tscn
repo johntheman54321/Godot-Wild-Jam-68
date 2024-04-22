@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://do8ww1urgvtat" path="res://Scenes/machines/furnace/furnace.tscn" id="6_36x2y"]
 [ext_resource type="FontFile" uid="uid://b3tdwh3h4808i" path="res://Fonts/Platypi-VariableFont_wght.otf" id="7_x0q25"]
 [ext_resource type="Texture2D" uid="uid://cqoflndgdhuvn" path="res://Sprites/Coin.png" id="8_rxrcj"]
-[ext_resource type="Script" path="res://Scenes/World/Order Timers.gd" id="11_odsa4"]
+[ext_resource type="Script" path="res://Script/Order Timers.gd" id="11_odsa4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ve46v"]
 texture = ExtResource("2_vjgdf")

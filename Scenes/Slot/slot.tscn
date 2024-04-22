@@ -1,13 +1,110 @@
-[gd_scene load_steps=2 format=3 uid="uid://bkonaa2hur7uy"]
+[gd_scene load_steps=12 format=3 uid="uid://bkonaa2hur7uy"]
 
 [ext_resource type="Script" path="res://Scenes/Slot/slot.gd" id="1_mieo5"]
+[ext_resource type="Texture2D" uid="uid://j41g3dw5yt71" path="res://Sprites/ores/Coal/Coal_ForgeMaster.png" id="2_pjiwr"]
+[ext_resource type="Texture2D" uid="uid://biw8r2ewxfrfy" path="res://Sprites/ores/Coal/CoalPickup_ForgeMaster.png" id="3_3uxmr"]
+[ext_resource type="Texture2D" uid="uid://8ioqokd287gl" path="res://Sprites/ores/Copper/CopperOre_ForgeMaster.png" id="4_0dkoo"]
+[ext_resource type="Texture2D" uid="uid://d3b6kxhoyv8kf" path="res://Sprites/ores/Copper/CopperOrePickup_ForgeMaster.png" id="5_be0ij"]
+[ext_resource type="Texture2D" uid="uid://b4nnpf8dhhth5" path="res://Sprites/ores/Iron/ironIngot_ForgeMaster.png" id="6_d1hvv"]
+[ext_resource type="Texture2D" uid="uid://d0q0x82imw8u2" path="res://Sprites/ores/Iron/IronOre_ForgeMaster.png" id="7_cm3w1"]
+[ext_resource type="Texture2D" uid="uid://cx1dg1wre4lcs" path="res://Sprites/ores/Iron/IronOrePickup_ForgeMaster.png" id="8_y1qkl"]
+[ext_resource type="Texture2D" uid="uid://835qicm7l0py" path="res://Sprites/ores/Tin/TinOre_ForgeMaster.png" id="9_othwt"]
+[ext_resource type="Texture2D" uid="uid://crynbt6j8ymeh" path="res://Sprites/ores/Tin/TinOrePickup_ForgeMaster.png" id="10_pc26k"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1vcc1"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"Nothing",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_pjiwr")
+}],
+"loop": true,
+"name": &"coal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_3uxmr")
+}],
+"loop": true,
+"name": &"coalInteractable",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_0dkoo")
+}],
+"loop": true,
+"name": &"copperOre",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_be0ij")
+}],
+"loop": true,
+"name": &"copperOreInteractable",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_d1hvv")
+}],
+"loop": true,
+"name": &"ironIngot",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"ironIngotInteractbale",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_cm3w1")
+}],
+"loop": true,
+"name": &"ironOre",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_y1qkl")
+}],
+"loop": true,
+"name": &"ironOreInteractable",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_othwt")
+}],
+"loop": true,
+"name": &"tinOre",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_pc26k")
+}],
+"loop": true,
+"name": &"tinOreInteractable",
+"speed": 5.0
+}]
 
 [node name="Slot" type="PanelContainer"]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 10.0
+offset_bottom = 10.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = ExtResource("1_mieo5")
 
-[node name="TextureRect" type="TextureRect" parent="."]
-custom_minimum_size = Vector2(9, 9)
-layout_mode = 2
-expand_mode = 1
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(5, 5)
+scale = Vector2(0.3125, 0.3125)
+sprite_frames = SubResource("SpriteFrames_1vcc1")
+animation = &"Nothing"

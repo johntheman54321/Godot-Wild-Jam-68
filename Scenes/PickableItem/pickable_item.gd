@@ -9,10 +9,12 @@ var pickedUpOffset
 @export var currentItemId : int
 const itemMap = ["coal","ironOre","copperOre","tinOre", "coalInteractable","ironOreInteractable","ironIngot","copperOreInteractable","copperIngot","tinOreInteractable", "tinIngot", "bronzeIngot", "steelIngot"]
 @export var player : CharacterBody2D
+var currentAnimation
 
 func _ready():
 	randomize()
 	pickedUpOffset = Vector2(randi_range(-pickupOffsetRange, pickupOffsetRange), randi_range(-pickupOffsetRange/2, pickupOffsetRange/2))
+	currentAnimation = $AnimatedSprite2D.animation
 func _process(delta):
 	$AnimatedSprite2D.play(itemMap[currentItemId])
 	if isInteractable:
@@ -21,8 +23,6 @@ func _process(delta):
 			if Input.is_action_just_pressed("Pickup"):
 				isPickedUp = true
 				isInteractable = false
-				get_parent().remove_child(self)
-				player.get_child(2).add_child(self)
 	if Input.is_action_just_pressed("Drop") and isPickedUp:
 		isPickedUp = false
 		global_position = player.global_position + pickedUpOffset * 2

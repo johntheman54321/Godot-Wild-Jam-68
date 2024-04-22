@@ -3,6 +3,8 @@ extends Control
 @export var icons:Array[Texture2D]
 const itemMap = ["coal","iron","copper","tin"]
 var pickableItem = preload("res://Scenes/PickableItem/pickable_item.tscn")
+@export var spawnLocation : Marker2D
+@export var randomOffset = 6
 @export var player : CharacterBody2D
 @export var quantity:int
 @export var type:String
@@ -25,7 +27,7 @@ func _on_button_pressed():
 	for i in range(0, quantity):
 		var newPickableItem = pickableItem.instantiate()
 		newPickableItem.currentItemId = current_ore
-		newPickableItem.global_position = player.global_position + Vector2(-40, -40)
+		newPickableItem.global_position = spawnLocation.global_position + Vector2(randi_range(-randomOffset, randomOffset), randi_range(-randomOffset, randomOffset))
 		newPickableItem.player = player
 		$"../../../".add_child(newPickableItem)
 	

@@ -1,43 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://dqjg6n8ef0ovx"]
 
+[ext_resource type="Script" path="res://Scenes/item_timer/ItemTimer.gd" id="1_y46h1"]
 [ext_resource type="Texture2D" uid="uid://j41g3dw5yt71" path="res://Sprites/ores/Coal/Coal_ForgeMaster.png" id="2_fa2vc"]
 [ext_resource type="Texture2D" uid="uid://d0q0x82imw8u2" path="res://Sprites/ores/Iron/IronOre_ForgeMaster.png" id="3_53ayu"]
 [ext_resource type="Texture2D" uid="uid://8ioqokd287gl" path="res://Sprites/ores/Copper/CopperOre_ForgeMaster.png" id="4_7l0wj"]
 [ext_resource type="Texture2D" uid="uid://835qicm7l0py" path="res://Sprites/ores/Tin/TinOre_ForgeMaster.png" id="5_t5aoj"]
-
-[sub_resource type="GDScript" id="GDScript_rks1s"]
-script/source = "extends Control
-
-@export var icons:Array[Texture2D]
-const itemMap = [\"coal\",\"iron\",\"copper\",\"tin\"]
-var pickableItem = preload(\"res://Scenes/PickableItem/pickable_item.tscn\")
-@export var player : CharacterBody2D
-@export var quantity:int
-@export var type:String
-@onready var current_ore = itemMap.find(type)
-
-func _ready():
-	# Change this to a better function later
-	$Timer.wait_time = quantity
-	$Timer.start()
-	$TextureRect.texture = icons[itemMap.find(type)]
-
-func _process(delta):
-	$ProgressBar.value = (($Timer.wait_time - $Timer.time_left) * 100)/$Timer.wait_time
-	
-
-	
-func _on_button_pressed():
-	if $ProgressBar.value == 100:
-		queue_free()
-	for i in range(0, quantity):
-		var newPickableItem = pickableItem.instantiate()
-		newPickableItem.currentItemId = current_ore
-		newPickableItem.global_position = player.global_position + Vector2(-40, -40)
-		newPickableItem.player = player
-		$\"../../../\".add_child(newPickableItem)
-	
-"
 
 [node name="ItemTimer" type="Control"]
 custom_minimum_size = Vector2(176, 64)
@@ -45,7 +12,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 176.0
 offset_bottom = 64.0
-script = SubResource("GDScript_rks1s")
+script = ExtResource("1_y46h1")
 icons = Array[Texture2D]([ExtResource("2_fa2vc"), ExtResource("3_53ayu"), ExtResource("4_7l0wj"), ExtResource("5_t5aoj")])
 
 [node name="Timer" type="Timer" parent="."]

@@ -115,7 +115,7 @@ shape = SubResource("CircleShape2D_5tnlo")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(1.125, 1.125)
 sprite_frames = SubResource("SpriteFrames_cxonv")
-animation = &"tinOreInteractable"
+animation = &"coal"
 
 [connection signal="body_entered" from="InteractableRange" to="." method="_on_interactable_range_body_entered"]
 [connection signal="body_exited" from="InteractableRange" to="." method="_on_interactable_range_body_exited"]
