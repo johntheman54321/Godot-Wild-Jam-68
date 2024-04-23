@@ -1,9 +1,10 @@
+Marker2D
+NinePatchRect
 TextureRect
 PanelContainer
 Panel
 GridContainer
 Label
-Marker2D
 AnimatedSprite2D
 BoxContainer
 Node2D
@@ -29,4 +30,3 @@ CharacterBody2D
 AudioStreamPlayer2D
 Container
 AudioStreamPlayer
-TileMap

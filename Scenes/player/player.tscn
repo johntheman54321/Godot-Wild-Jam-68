@@ -44,7 +44,6 @@ position = Vector2(0, 3)
 shape = SubResource("RectangleShape2D_h58cj")
 
 [node name="Inventory" type="GridContainer" parent="."]
-visible = false
 offset_left = -19.0
 offset_top = -49.0
 offset_right = 18.0
@@ -54,6 +53,7 @@ metadata/_edit_group_ = true
 
 [node name="Slot1" parent="Inventory" instance=ExtResource("6_ics4b")]
 layout_mode = 2
+size_flags_stretch_ratio = 0.0
 
 [node name="Slot2" parent="Inventory" instance=ExtResource("6_ics4b")]
 layout_mode = 2
@@ -78,5 +78,3 @@ layout_mode = 2
 
 [node name="Slot9" parent="Inventory" instance=ExtResource("6_ics4b")]
 layout_mode = 2
-
-[editable path="Inventory/Slot1"]

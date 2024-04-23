@@ -21,7 +21,6 @@ buses/default_bus_layout="res://Scenes/Music/default_bus_layout.tres"
 
 [display]
 
-window/size/mode=3
 window/stretch/mode="viewport"
 
 [input]

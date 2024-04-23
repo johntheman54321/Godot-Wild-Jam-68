@@ -1,11 +1,10 @@
 res://Scenes/player/player.tscn
-res://Script/ItemTimer.gd
-res://Scenes/player/player.gd
-res://Scenes/Slot/slot.tscn
-res://Scenes/item_timer/item_timer.tscn
 res://Scenes/item_timer/ItemTimer.gd
-res://Script/Order Timers.gd
+res://Scenes/item_timer/item_timer.tscn
 res://Scenes/World/world.tscn
-res://Scenes/PickableItem/pickable_item.gd
 res://Scenes/PickableItem/pickable_item.tscn
+res://Scenes/Slot/slot.tscn
 res://Scenes/Slot/slot.gd
+res://Script/Order Timers.gd
+res://Scenes/player/player.gd
+res://Scenes/PickableItem/pickable_item.gd

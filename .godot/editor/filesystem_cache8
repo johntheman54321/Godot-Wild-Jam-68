@@ -1,13 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713747436
+::res://::1713812871
 icon.svg::CompressedTexture2D::1346206398989664400::1712956287::1713739234::1::::<><>::
 README.md::TextFile::-1::1713564470::0::1::::<><>::
 ::res://Fonts/::1713141002
 BLKCHCRY.otf::FontFile::4311204252774675875::1713066550::1713140323::1::::<><>::
 Platypi-VariableFont_wght.otf::FontFile::4391153332605454086::1713141002::1713141002::1::::<><>::
 ::res://Scenes/::1713740928
-::res://Scenes/item_timer/::1713740847
-item_timer.tscn::PackedScene::8301283344613530353::1713740847::0::1::::<><>::uid://j41g3dw5yt71
+::res://Scenes/item_timer/::1713752575
+ItemTimer.gd::GDScript::-1::1713749738::0::1::::<>Control<>::
+item_timer.tscn::PackedScene::8301283344613530353::1713752575::0::1::::<><>::res://Scenes/item_timer/ItemTimer.gd<>uid://j41g3dw5yt71::::res://Sprites/ores/Coal/Coal_ForgeMaster.png<>uid://d0q0x82imw8u2::::res://Sprites/ores/Iron/IronOre_ForgeMaster.png<>uid://8ioqokd287gl::::res://Sprites/ores/Copper/CopperOre_ForgeMaster.png<>uid://835qicm7l0py::::res://Sprites/ores/Tin/TinOre_ForgeMaster.png
 ::res://Scenes/loading_screen/::1713111627
 loading_screen.gd::GDScript::-1::1713066085::0::1::::<>Node2D<>::
 loading_screen.tscn::PackedScene::1177515191130613376::1713111627::0::1::::<><>::res://Scenes/loading_screen/loading_screen.gd
@@ -29,24 +30,23 @@ npc.tscn::PackedScene::4321097782810892438::1713585108::0::1::::<><>::res://Scen
 ::res://Scenes/Pause Menu/::1713489317
 pause_menu.gd::GDScript::-1::1713486280::0::1::::<>Control<>::
 pause_menu.tscn::PackedScene::415568209989444780::1713489317::0::1::::<><>::res://Scenes/Pause Menu/pause_menu.gd<>uid://b2om50ho0qbh8
-::res://Scenes/PickableItem/::1713740847
-pickable_item.gd::GDScript::-1::1713739554::0::1::::<>Control<>::
-pickable_item.tscn::PackedScene::1615446874598308740::1713740847::0::1::::<><>::res://Scenes/PickableItem/pickable_item.gd<>uid://j41g3dw5yt71
-::res://Scenes/player/::1713748345
-player.gd::GDScript::-1::1713748141::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::9203744487414567948::1713748345::0::1::::<><>::res://Scenes/player/player.gd<>uid://dwcsapqfi21ys::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_1.png<>uid://3v10wxhov6wu::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_2.png<>uid://h0yxqmq7y1og::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_3.png<>uid://vttbtaqw7hg4::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_4.png<>uid://bkonaa2hur7uy::::res://Scenes/Slot/slot.tscn
+::res://Scenes/PickableItem/::1713752575
+pickable_item.gd::GDScript::-1::1713751160::0::1::::<>Control<>::
+pickable_item.tscn::PackedScene::1615446874598308740::1713752575::0::1::::<><>::res://Scenes/PickableItem/pickable_item.gd<>uid://j41g3dw5yt71::::res://Sprites/ores/Coal/Coal_ForgeMaster.png<>uid://biw8r2ewxfrfy::::res://Sprites/ores/Coal/CoalPickup_ForgeMaster.png<>uid://8ioqokd287gl::::res://Sprites/ores/Copper/CopperOre_ForgeMaster.png<>uid://d3b6kxhoyv8kf::::res://Sprites/ores/Copper/CopperOrePickup_ForgeMaster.png<>uid://b4nnpf8dhhth5::::res://Sprites/ores/Iron/ironIngot_ForgeMaster.png<>uid://d0q0x82imw8u2::::res://Sprites/ores/Iron/IronOre_ForgeMaster.png<>uid://835qicm7l0py::::res://Sprites/ores/Tin/TinOre_ForgeMaster.png<>uid://cx1dg1wre4lcs::::res://Sprites/ores/Iron/IronOrePickup_ForgeMaster.png<>uid://crynbt6j8ymeh::::res://Sprites/ores/Tin/TinOrePickup_ForgeMaster.png
+::res://Scenes/player/::1713752575
+player.gd::GDScript::-1::1713751694::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::9203744487414567948::1713752575::0::1::::<><>::res://Scenes/player/player.gd<>uid://dwcsapqfi21ys::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_1.png<>uid://3v10wxhov6wu::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_2.png<>uid://h0yxqmq7y1og::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_3.png<>uid://vttbtaqw7hg4::::res://Sprites/2D Pixel Dungeon Asset Pack/Character_animation/priests_idle/priest1/v2/priest1_v2_4.png<>uid://bkonaa2hur7uy::::res://Scenes/Slot/slot.tscn
 ::res://Scenes/ShopKeeper/::1713740847
 shop_keeper.gd::GDScript::-1::1713638125::0::1::::<>StaticBody2D<>::
 shop_keeper.tscn::PackedScene::6581345068805266900::1713740847::0::1::::<><>::res://Scenes/ShopKeeper/shop_keeper.gd<>uid://cbrs3nyv6p0n8
-::res://Scenes/Slot/::1713748345
-slot.gd::GDScript::-1::1713741361::0::1::::<>PanelContainer<>::
-slot.tscn::PackedScene::3117999771591425576::1713748345::0::1::::<><>::res://Scenes/Slot/slot.gd
-::res://Scenes/World/::1713747436
+::res://Scenes/Slot/::1713752576
+slot.gd::GDScript::-1::1713752468::0::1::::<>PanelContainer<>::
+slot.tscn::PackedScene::3117999771591425576::1713752576::0::1::::<><>::res://Scenes/Slot/slot.gd<>uid://j41g3dw5yt71::::res://Sprites/ores/Coal/Coal_ForgeMaster.png<>uid://biw8r2ewxfrfy::::res://Sprites/ores/Coal/CoalPickup_ForgeMaster.png<>uid://8ioqokd287gl::::res://Sprites/ores/Copper/CopperOre_ForgeMaster.png<>uid://d3b6kxhoyv8kf::::res://Sprites/ores/Copper/CopperOrePickup_ForgeMaster.png<>uid://b4nnpf8dhhth5::::res://Sprites/ores/Iron/ironIngot_ForgeMaster.png<>uid://d0q0x82imw8u2::::res://Sprites/ores/Iron/IronOre_ForgeMaster.png<>uid://cx1dg1wre4lcs::::res://Sprites/ores/Iron/IronOrePickup_ForgeMaster.png<>uid://835qicm7l0py::::res://Sprites/ores/Tin/TinOre_ForgeMaster.png<>uid://crynbt6j8ymeh::::res://Sprites/ores/Tin/TinOrePickup_ForgeMaster.png
+::res://Scenes/World/::1713752575
 world.gd::GDScript::-1::1713638125::0::1::::<>Node2D<>::
-world.tscn::PackedScene::8827682834296294187::1713747436::0::1::::<><>::res://Scenes/World/world.gd<>uid://ceodsknvecwpo::::res://Sprites/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png<>uid://d4emleblx5wfk::::res://Scenes/player/player.tscn<>uid://c01b16iohq8ey::::res://Scenes/ShopKeeper/shop_keeper.tscn<>uid://q1nrdwh5h3ts::::res://Scenes/loading_screen/loading_screen.tscn<>uid://b2om50ho0qbh8::::res://Fonts/BLKCHCRY.otf<>uid://f6kl27emvlii::::res://Scenes/Pause Menu/pause_menu.tscn<>uid://do8ww1urgvtat::::res://Scenes/machines/furnace/furnace.tscn<>uid://b3tdwh3h4808i::::res://Fonts/Platypi-VariableFont_wght.otf<>uid://cqoflndgdhuvn::::res://Sprites/Coin.png<>res://Script/Order Timers.gd
-::res://Script/::1713747436
-ItemTimer.gd::GDScript::-1::1713746860::0::1::::<>Control<>::
-Order Timers.gd::GDScript::-1::1713657310::0::1::::<>VBoxContainer<>::
+world.tscn::PackedScene::8827682834296294187::1713752575::0::1::::<><>::res://Scenes/World/world.gd<>uid://ceodsknvecwpo::::res://Sprites/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png<>uid://d4emleblx5wfk::::res://Scenes/player/player.tscn<>uid://c01b16iohq8ey::::res://Scenes/ShopKeeper/shop_keeper.tscn<>uid://q1nrdwh5h3ts::::res://Scenes/loading_screen/loading_screen.tscn<>uid://b2om50ho0qbh8::::res://Fonts/BLKCHCRY.otf<>uid://f6kl27emvlii::::res://Scenes/Pause Menu/pause_menu.tscn<>uid://do8ww1urgvtat::::res://Scenes/machines/furnace/furnace.tscn<>uid://b3tdwh3h4808i::::res://Fonts/Platypi-VariableFont_wght.otf<>uid://cqoflndgdhuvn::::res://Sprites/Coin.png<>res://Script/Order Timers.gd
+::res://Script/::1713749193
+Order Timers.gd::GDScript::-1::1713749193::0::1::::<>VBoxContainer<>::
 ::res://SFX/::1713389995
 fireplace-with-crackling-sounds-2-min-rk-178392.mp3::AudioStreamMP3::3086008848673737608::1713222998::1713389995::1::::<><>::
 ::res://Sprites/::1713398177

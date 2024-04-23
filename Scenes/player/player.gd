@@ -4,19 +4,19 @@ extends CharacterBody2D
 var dir
 @export var money = 50
 @onready var slotsAvailble = {
-	"Slot1" : $Inventory/Slot1/AnimatedSprite2D,
-	"Slot2" : $Inventory/Slot2/AnimatedSprite2D,
-	"Slot3" : $Inventory/Slot3/AnimatedSprite2D,
-	"Slot4" : $Inventory/Slot4/AnimatedSprite2D,
-	"Slot5" : $Inventory/Slot5/AnimatedSprite2D,
-	"Slot6" : $Inventory/Slot6/AnimatedSprite2D,
-	"Slot7" : $Inventory/Slot7/AnimatedSprite2D,
-	"Slot8" : $Inventory/Slot8/AnimatedSprite2D,
-	"Slot9" : $Inventory/Slot9/AnimatedSprite2D,
+	$Inventory/Slot1 : false,
+	$Inventory/Slot2 : false,
+	$Inventory/Slot3 : false,
+	$Inventory/Slot4 : false,
+	$Inventory/Slot5 : false,
+	$Inventory/Slot6 : false,
+	$Inventory/Slot7 : false,
+	$Inventory/Slot8 : false,
+	$Inventory/Slot9 : false,
 }
 
 func _ready():
-	slotsAvailble["Slot1"].play("ironIngot")
+	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
