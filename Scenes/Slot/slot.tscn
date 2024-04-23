@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://Scenes/Slot/slot.gd" id="1_mieo5"]
 
 [node name="Slot" type="PanelContainer"]
-offset_right = 8.0
-offset_bottom = 8.0
+offset_right = 60.0
+offset_bottom = 53.0
 scale = Vector2(0.3, 0.3)
 size_flags_horizontal = 3
 size_flags_vertical = 3

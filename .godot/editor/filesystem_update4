@@ -5,6 +5,3 @@ res://Scenes/World/world.tscn
 res://Scenes/PickableItem/pickable_item.tscn
 res://Scenes/Slot/slot.tscn
 res://Scenes/Slot/slot.gd
-res://Script/Order Timers.gd
-res://Scenes/player/player.gd
-res://Scenes/PickableItem/pickable_item.gd

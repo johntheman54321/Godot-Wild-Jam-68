@@ -11,7 +11,6 @@ func _process(delta):
 	if child != null:
 		child.scale = Vector2(0.3, 0.3)
 		child.position = Vector2(4, 4)
-		print("helljkjk")
 	
 #func _get_drag_data(at_position):
 #

@@ -24,10 +24,10 @@ func _process(delta):
 func _on_button_pressed():
 	if $ProgressBar.value == 100:
 		queue_free()
-	for i in range(0, quantity):
-		var newPickableItem = pickableItem.instantiate()
-		newPickableItem.currentItemId = current_ore
-		newPickableItem.global_position = spawnLocation.global_position + Vector2(randi_range(-randomOffset, randomOffset), randi_range(-randomOffset, randomOffset))
-		newPickableItem.player = player
-		$"../../../".add_child(newPickableItem)
+		for i in range(0, quantity):
+			var newPickableItem = pickableItem.instantiate()
+			newPickableItem.currentItemId = current_ore
+			newPickableItem.global_position = spawnLocation.global_position + Vector2(randi_range(-randomOffset, randomOffset), randi_range(-randomOffset, randomOffset))
+			newPickableItem.player = player
+			$"../../../".add_child(newPickableItem)
 	
